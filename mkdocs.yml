@@ -14,7 +14,6 @@ copyright: Copyright &copy; 2025 Openwater - Licensed under Apache 2.0
 # Configuration
 theme:
   name: material
-  custom_dir: overrides
   logo: assets/openwater-logo.png
   favicon: assets/favicon.png
   
