@@ -1,0 +1,48 @@
+/* Custom styles for Openwater documentation */
+
+:root {
+  --openwater-blue: #0066cc;
+  --openwater-cyan: #00bcd4;
+}
+
+/* Custom color accents */
+.md-typeset a {
+  color: var(--openwater-blue);
+}
+
+.md-typeset a:hover {
+  color: var(--openwater-cyan);
+}
+
+/* Custom card styling */
+.md-typeset .grid.cards {
+  gap: 1rem;
+}
+
+/* Hero section on homepage */
+.md-typeset h1:first-of-type {
+  margin-bottom: 2rem;
+}
+
+/* Code block enhancements */
+.md-typeset pre > code {
+  border-radius: 0.5rem;
+}
+
+/* Admonition custom styling */
+.md-typeset .admonition.success {
+  border-color: #00c853;
+}
+
+/* Responsive image handling */
+.md-typeset img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+/* Custom button styling */
+.md-button {
+  border-radius: 0.5rem;
+  text-transform: none;
+}
