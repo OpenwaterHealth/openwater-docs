@@ -1,31 +1,20 @@
 # OpenLIFU Platform
 
-**Low Intensity Focused Ultrasound for Non-Invasive Neuromodulation**
+**Low Intensity Focused Ultrasound for Neuromodulation**
 
-<div class="grid cards" markdown>
+OpenLIFU is an open-source platform for planning and delivering focused ultrasound treatments.
 
--   :material-download:{ .lg .middle } **Install**
-    
-    [:octicons-arrow-right-24: Installation](installation.md)
+## Quick Start
 
--   :material-book-open-variant:{ .lg .middle } **Learn**
-    
-    [:octicons-arrow-right-24: User Guide](user-guide/index.md)
-
--   :material-code-braces:{ .lg .middle } **Develop**
-    
-    [:octicons-arrow-right-24: Developer Guide](developer-guide/index.md)
-
--   :material-puzzle:{ .lg .middle } **3D Slicer**
-    
-    [:octicons-arrow-right-24: Slicer Extension](slicer/index.md)
-
-</div>
+```bash
+pip install openlifu
+```
 
 ## Features
 
-- ✅ Apache 2.0 Licensed
-- ✅ FDA Breakthrough Designation
-- ✅ 3D Slicer Integration
-- ✅ Safety-Compliant
-- ✅ Used by 50+ Universities
+- Treatment planning
+- Acoustic simulation
+- Hardware control
+- 3D Slicer integration
+
+[Installation](../getting-started/installation.md) | [Basic Usage](basic-usage.md)
