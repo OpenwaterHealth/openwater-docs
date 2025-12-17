@@ -1,17 +1,11 @@
 # Hardware Documentation
 
-Open-source hardware designs for OpenLIFU and OpenMOTION platforms.
+Complete hardware guides for Openwater platforms.
 
-<div class="grid cards" markdown>
+## Platforms
 
--   **OpenLIFU Hardware**
-    
-    [:octicons-arrow-right-24: Transducers, Electronics, Assembly](openlifu/index.md)
+- [OpenLIFU Hardware](openlifu-hardware.md)
+- [OpenMOTION Hardware](openmotion-hardware.md)
+- [Assembly Guides](assembly-guides.md)
 
--   **OpenMOTION Hardware**
-    
-    [:octicons-arrow-right-24: Sensors, Electronics, Assembly](openmotion/index.md)
-
-</div>
-
-All hardware designs released under permissive open-source licenses.
+[Hardware Setup](../getting-started/hardware-setup.md)
