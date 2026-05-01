@@ -1,6 +1,6 @@
 # Openwater Documentation
 
-[![Deploy Documentation](https://github.com/OpenwaterHealth/openwater-docs/actions/workflows/deploy.yml/badge.svg)](https://github.com/OpenwaterHealth/openwater-docs/actions/workflows/deploy.yml)
+[![Deploy Documentation](https://github.com/OpenwaterHealth/openwater-docs/actions/workflows/deploy-docs.yml/badge.svg)](https://github.com/OpenwaterHealth/openwater-docs/actions/workflows/deploy.yml)
 [![License](https://img.shields.io/badge/License-AGPL--3.0-blue.svg)](LICENSE)
 
 Comprehensive documentation for Openwater's open-source medical device platforms.
