@@ -1,0 +1,159 @@
+# =============================================================================
+# Openwater Documentation — MkDocs configuration
+# =============================================================================
+# Goal: a working build today. Nav references only pages that actually exist.
+# As content lands (Step 3 of the plumbing fix), expand the nav.
+# =============================================================================
+
+site_name: Openwater Documentation
+site_description: Open-source medical device platforms — OpenLIFU and OpenMOTION
+site_url: https://docs.openwater.health
+site_author: Openwater Health
+
+repo_url: https://github.com/OpenwaterHealth/openwater-docs
+repo_name: OpenwaterHealth/openwater-docs
+edit_uri: edit/main/docs/
+
+copyright: >
+  Copyright &copy; 2026 Openwater Health.
+  Documentation licensed under
+  <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>.
+  Code samples under
+  <a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank" rel="noopener">Apache 2.0</a>.
+
+# -----------------------------------------------------------------------------
+# Theme
+# -----------------------------------------------------------------------------
+theme:
+  name: material
+  language: en
+  logo: assets/openwater-logo.png
+  favicon: assets/favicon.ico
+  font:
+    text: Inter
+    code: JetBrains Mono
+  palette:
+    # Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: cyan
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    # Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      accent: cyan
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+    - content.action.edit
+    - content.action.view
+    - content.tabs.link
+    - toc.follow
+
+extra_css:
+  - stylesheets/extra.css
+extra_javascript:
+  - javascripts/extra.js
+
+# -----------------------------------------------------------------------------
+# Markdown extensions (matches the syntax already used in docs/index.md)
+# -----------------------------------------------------------------------------
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+
+# -----------------------------------------------------------------------------
+# Plugins
+# -----------------------------------------------------------------------------
+plugins:
+  - search:
+      lang: en
+
+# -----------------------------------------------------------------------------
+# Navigation — only pages that exist today
+# Add entries to this list as content is ported. Mkdocs will warn (not fail)
+# on .md files in docs/ that aren't referenced here, which is fine for now.
+# -----------------------------------------------------------------------------
+nav:
+  - Home: index.md
+  - OpenLIFU:
+      - Overview: openlifu/index.md
+  - OpenMOTION:
+      - Overview: openmotion/index.md
+  - Naming Conventions: ../naming-conventions.md  # NOTE: outside docs/, see docs_dir below
+
+# If naming-conventions.md should be served, move it into docs/ in this PR
+# rather than referencing it from outside. See "post-merge cleanup" below.
+
+# -----------------------------------------------------------------------------
+# Extra
+# -----------------------------------------------------------------------------
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/OpenwaterHealth
+      name: OpenwaterHealth on GitHub
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/fS7vfAX4fA
+      name: Join the Discord community
+    - icon: fontawesome/brands/x-twitter
+      link: https://x.com/OpenwaterHealth
+      name: Follow on X
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/channel/UCvoo5XMm3a7wfeiVkBosznw
+      name: Subscribe on YouTube
+  generator: false  # hide "Made with Material for MkDocs" footer
+
+# -----------------------------------------------------------------------------
+# Build behavior
+# -----------------------------------------------------------------------------
+strict: false   # warn but do not fail on broken links during the cleanup arc
+docs_dir: docs
+site_dir: site
+use_directory_urls: true
