@@ -11,8 +11,8 @@ Comprehensive documentation for Openwater's open-source medical device platforms
 
 Openwater is democratizing medical device innovation through open-source hardware and software platforms:
 
-- **OpenLIFU:** Low Intensity Focused Ultrasound for non-invasive neuromodulation
-- **OpenMOTION:** Near-infrared optical imaging for blood flow and oxygenation monitoring
+- **Open-LIFU:** Low Intensity Focused Ultrasound for non-invasive neuromodulation
+- **Open-Motion:** Near-infrared optical imaging for blood flow and oxygenation monitoring
 
 **Mission:** Reduce medical device development costs from $119M to $15M through open-source collaboration, serving 3.5 billion underserved people globally.
 
@@ -21,8 +21,8 @@ Openwater is democratizing medical device innovation through open-source hardwar
 ```
 docs/
 ├── getting-started/    # Installation and quickstart guides
-├── openlifu/          # OpenLIFU platform documentation
-├── openmotion/        # OpenMOTION platform documentation
+├── openlifu/          # Open-LIFU platform documentation
+├── openmotion/        # Open-Motion platform documentation
 ├── hardware/          # Hardware assembly and BOM
 ├── community/         # Community guidelines and governance
 ├── research/          # Academic collaborations and publications
