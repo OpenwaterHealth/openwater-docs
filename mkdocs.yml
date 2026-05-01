@@ -126,7 +126,7 @@ nav:
       - Overview: openlifu/index.md
   - OpenMOTION:
       - Overview: openmotion/index.md
-  - Naming Conventions: ../naming-conventions.md  # NOTE: outside docs/, see docs_dir below
+  - Naming Conventions: naming-conventions.md  # NOTE: outside docs/, see docs_dir below
 
 # If naming-conventions.md should be served, move it into docs/ in this PR
 # rather than referencing it from outside. See "post-merge cleanup" below.
