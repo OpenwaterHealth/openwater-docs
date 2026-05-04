@@ -1,48 +1,292 @@
-/* Custom styles for Openwater documentation */
+/* ============================================================================
+   Openwater brand styles for MkDocs Material
+   Visually mirrors openwaterhealth.github.io/openwater-community/
+   ============================================================================ */
 
+/* ---------- Brand palette ---------- */
+:root,
+[data-md-color-scheme="openwater"] {
+  --md-primary-fg-color:        #0891B2;  /* primary teal */
+  --md-primary-fg-color--light: #06B6D4;  /* bright cyan */
+  --md-primary-fg-color--dark:  #0A2540;  /* deep navy */
+  --md-accent-fg-color:         #06B6D4;
+  --md-accent-fg-color--transparent: rgba(6, 182, 212, 0.1);
+
+  --md-default-bg-color:    #ffffff;
+  --md-default-fg-color:    #0F172A;
+  --md-default-fg-color--light:  #475569;
+  --md-default-fg-color--lighter: #94A3B8;
+
+  --md-typeset-a-color: #0891B2;
+
+  --md-footer-bg-color: #0A2540;
+  --md-footer-bg-color--dark: #0A2540;
+  --md-footer-fg-color: #ffffff;
+  --md-footer-fg-color--light: #67E8F9;
+  --md-footer-fg-color--lighter: #94A3B8;
+
+  --ow-deep-navy:   #0A2540;
+  --ow-ocean-blue:  #164E63;
+  --ow-teal:        #0891B2;
+  --ow-cyan:        #06B6D4;
+  --ow-aqua-light:  #22D3EE;
+  --ow-aqua-bright: #67E8F9;
+  --ow-light-bg:    #F0F9FF;
+  --ow-border:      #E0F2FE;
+}
+
+/* Slate (dark mode) overrides */
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color:        #06B6D4;
+  --md-primary-fg-color--light: #22D3EE;
+  --md-primary-fg-color--dark:  #0A2540;
+  --md-accent-fg-color:         #67E8F9;
+  --md-typeset-a-color:         #67E8F9;
+  --md-footer-bg-color:         #0A2540;
+}
+
+/* ---------- Typography (system stack matches community site) ---------- */
 :root {
-  --openwater-blue: #0066cc;
-  --openwater-cyan: #00bcd4;
+  --md-text-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --md-code-font: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
 }
 
-/* Custom color accents */
-.md-typeset a {
-  color: var(--openwater-blue);
+body, .md-typeset {
+  font-family: var(--md-text-font);
 }
 
-.md-typeset a:hover {
-  color: var(--openwater-cyan);
+.md-typeset code,
+.md-typeset pre {
+  font-family: var(--md-code-font);
 }
 
-/* Custom card styling */
-.md-typeset .grid.cards {
-  gap: 1rem;
+/* ---------- Header ---------- */
+.md-header {
+  background: linear-gradient(135deg, var(--ow-deep-navy) 0%, var(--ow-teal) 100%);
+  box-shadow: 0 2px 10px rgba(8, 145, 178, 0.15);
 }
 
-/* Hero section on homepage */
-.md-typeset h1:first-of-type {
-  margin-bottom: 2rem;
+.md-header__title {
+  font-weight: 600;
+  letter-spacing: -0.01em;
 }
 
-/* Code block enhancements */
-.md-typeset pre > code {
-  border-radius: 0.5rem;
+/* ---------- Tabs nav ---------- */
+.md-tabs {
+  background: var(--ow-deep-navy);
 }
 
-/* Admonition custom styling */
-.md-typeset .admonition.success {
-  border-color: #00c853;
+.md-tabs__link {
+  opacity: 0.85;
+  font-weight: 500;
 }
 
-/* Responsive image handling */
-.md-typeset img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 0.5rem;
+.md-tabs__link:hover,
+.md-tabs__link--active {
+  opacity: 1;
+  color: var(--ow-aqua-bright);
 }
 
-/* Custom button styling */
-.md-button {
-  border-radius: 0.5rem;
-  text-transform: none;
+/* ---------- Hero (used on docs/index.md via custom HTML) ---------- */
+.ow-hero {
+  position: relative;
+  margin: -1.5rem -2rem 2.5rem -2rem;   /* break out of content gutter */
+  padding: 5rem 2rem 4rem;
+  text-align: center;
+  color: #ffffff;
+  background-image: url("../assets/openwater-3.png");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  border-radius: 0;
+}
+
+.ow-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg,
+    rgba(10, 37, 64, 0.78) 0%,
+    rgba(22, 78, 99, 0.82) 50%,
+    rgba(8, 145, 178, 0.78) 100%);
+  z-index: 1;
+}
+
+.ow-hero__inner {
+  position: relative;
+  z-index: 2;
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+.ow-hero h1 {
+  font-size: 2.75rem;
+  font-weight: 700;
+  line-height: 1.15;
+  margin: 0 0 1rem;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.35);
+  color: #ffffff;
+}
+
+.ow-hero p {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin: 0 auto 2rem;
+  max-width: 720px;
+  opacity: 0.95;
+  text-shadow: 0 1px 8px rgba(0,0,0,0.25);
+}
+
+.ow-hero__cta {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+.ow-btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  border: 2px solid transparent;
+}
+
+.ow-btn--primary {
+  background: var(--ow-cyan);
+  color: var(--ow-deep-navy);
+}
+
+.ow-btn--primary:hover {
+  background: var(--ow-aqua-light);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(34, 211, 238, 0.35);
+  color: var(--ow-deep-navy);
+}
+
+.ow-btn--ghost {
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+  border-color: var(--ow-aqua-light);
+  backdrop-filter: blur(6px);
+}
+
+.ow-btn--ghost:hover {
+  background: rgba(34, 211, 238, 0.18);
+  border-color: var(--ow-aqua-bright);
+  color: #ffffff;
+}
+
+@media (max-width: 720px) {
+  .ow-hero { padding: 3.5rem 1.25rem 2.5rem; }
+  .ow-hero h1 { font-size: 2rem; }
+  .ow-hero p  { font-size: 1.05rem; }
+}
+
+/* ---------- Stat strip (matches community dashboard) ---------- */
+.ow-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+  max-width: 1100px;
+  margin: -2.5rem auto 3rem;
+  padding: 2rem 1.5rem;
+  background: #ffffff;
+  border-radius: 16px;
+  border-top: 4px solid var(--ow-cyan);
+  box-shadow: 0 16px 40px rgba(8, 145, 178, 0.15);
+  position: relative;
+  z-index: 3;
+}
+
+.ow-stats__item { text-align: center; }
+.ow-stats__num {
+  display: block;
+  font-size: 2.25rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--ow-teal), var(--ow-cyan), var(--ow-aqua-light));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1;
+}
+.ow-stats__label {
+  display: block;
+  margin-top: 0.4rem;
+  color: var(--ow-deep-navy);
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+.ow-stats__sub {
+  display: block;
+  margin-top: 0.2rem;
+  color: var(--md-default-fg-color--light);
+  font-size: 0.8rem;
+}
+
+/* ---------- Card grid for landing sections ---------- */
+.md-typeset .grid.cards > ul > li {
+  border: 2px solid var(--ow-border);
+  border-radius: 12px;
+  background: #ffffff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.md-typeset .grid.cards > ul > li:hover {
+  transform: translateY(-3px);
+  border-color: var(--ow-cyan);
+  box-shadow: 0 12px 32px rgba(8, 145, 178, 0.15);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .grid.cards > ul > li {
+  background: rgba(15, 23, 42, 0.4);
+  border-color: rgba(34, 211, 238, 0.25);
+}
+
+/* ---------- Headings ---------- */
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4 {
+  color: var(--ow-deep-navy);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+[data-md-color-scheme="slate"] .md-typeset h1,
+[data-md-color-scheme="slate"] .md-typeset h2,
+[data-md-color-scheme="slate"] .md-typeset h3,
+[data-md-color-scheme="slate"] .md-typeset h4 {
+  color: var(--ow-aqua-bright);
+}
+
+/* ---------- Admonitions: tighter, brand-aligned accents ---------- */
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: 10px;
+  border-left-width: 4px;
+}
+
+/* ---------- Tables ---------- */
+.md-typeset table:not([class]) th {
+  background: var(--ow-light-bg);
+  color: var(--ow-deep-navy);
+  font-weight: 600;
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) th {
+  background: rgba(8, 145, 178, 0.18);
+  color: var(--ow-aqua-bright);
+}
+
+/* ---------- Footer polish ---------- */
+.md-footer {
+  background: var(--ow-deep-navy);
+}
+
+.md-footer-meta {
+  background: #06283d;
 }
