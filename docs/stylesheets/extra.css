@@ -1,14 +1,14 @@
 /* ============================================================================
-   Openwater brand styles for MkDocs Material — v2 (post-launch refinements)
-   Visually mirrors openwaterhealth.github.io/openwater-community/
+   Openwater brand styles for MkDocs Material — v3
+   v3 changes: declutter header to match community page (one effective row)
    ============================================================================ */
 
 /* ---------- Brand palette ---------- */
 :root,
 [data-md-color-scheme="openwater"] {
-  --md-primary-fg-color:        #0891B2;  /* primary teal */
-  --md-primary-fg-color--light: #06B6D4;  /* bright cyan */
-  --md-primary-fg-color--dark:  #0A2540;  /* deep navy */
+  --md-primary-fg-color:        #0891B2;
+  --md-primary-fg-color--light: #06B6D4;
+  --md-primary-fg-color--dark:  #0A2540;
   --md-accent-fg-color:         #06B6D4;
   --md-accent-fg-color--transparent: rgba(6, 182, 212, 0.1);
 
@@ -44,7 +44,6 @@
   --md-footer-bg-color:         #0A2540;
 }
 
-/* ---------- Typography (system stack matches community site) ---------- */
 :root {
   --md-text-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   --md-code-font: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
@@ -59,7 +58,7 @@ body, .md-typeset {
   font-family: var(--md-code-font);
 }
 
-/* ---------- WHITE HEADER (matches community page) ---------- */
+/* ---------- WHITE HEADER, decluttered ---------- */
 .md-header,
 .md-header[data-md-state="shadow"] {
   background: #ffffff;
@@ -68,16 +67,48 @@ body, .md-typeset {
   border-bottom: 2px solid var(--ow-light-bg);
 }
 
+/* Hide the page-title text next to the logo (matches community's logo-only top-left) */
 .md-header__title,
 .md-header__topic,
-.md-header__topic > .md-ellipsis,
-.md-header__title > .md-header__topic .md-ellipsis {
-  color: var(--ow-deep-navy);
+.md-header__topic > .md-ellipsis {
+  display: none;
 }
 
-.md-header__title {
-  font-weight: 600;
-  letter-spacing: -0.01em;
+/* Hide the repo link in the top-right (community page doesn't have one) */
+.md-header__source {
+  display: none;
+}
+
+/* Keep the search button as an icon only — collapse the wide search input
+   by default. It still works on click / "/" keypress. */
+.md-search {
+  margin-right: 0.25rem;
+}
+
+@media screen and (min-width: 60em) {
+  .md-search__form {
+    background: transparent;
+    box-shadow: none;
+  }
+  .md-search__input {
+    background: var(--ow-light-bg);
+    color: var(--ow-deep-navy);
+    width: 11rem;
+    transition: width 0.2s ease, background 0.2s ease;
+  }
+  .md-search__input:focus {
+    width: 18rem;
+    background: #ffffff;
+    box-shadow: 0 0 0 2px var(--ow-cyan);
+  }
+}
+
+.md-search__input::placeholder {
+  color: var(--md-default-fg-color--light);
+}
+
+.md-search__icon[for="__search"] {
+  color: var(--ow-deep-navy);
 }
 
 .md-header__button,
@@ -91,34 +122,29 @@ body, .md-typeset {
   opacity: 1;
 }
 
-/* Search bar within white header */
-.md-search__input {
-  background: var(--ow-light-bg);
-  color: var(--ow-deep-navy);
+.md-header__button.md-logo img,
+.md-header__button.md-logo svg {
+  height: 2rem;
+  width: auto;
 }
 
-.md-search__input::placeholder {
-  color: var(--md-default-fg-color--light);
-}
-
-.md-search__icon[for="__search"] {
-  color: var(--ow-deep-navy);
-}
-
-/* Dark mode: keep header dark */
+/* Dark mode header */
 [data-md-color-scheme="slate"] .md-header {
   background: var(--ow-deep-navy);
   color: #ffffff;
   border-bottom: 1px solid rgba(34, 211, 238, 0.2);
 }
 
-[data-md-color-scheme="slate"] .md-header__title,
-[data-md-color-scheme="slate"] .md-header__topic,
 [data-md-color-scheme="slate"] .md-header__button {
   color: #ffffff;
 }
 
-/* ---------- Tabs (also white, matching header) ---------- */
+[data-md-color-scheme="slate"] .md-search__input {
+  background: rgba(255,255,255,0.1);
+  color: #ffffff;
+}
+
+/* ---------- Tabs row (becomes the visible nav, like community) ---------- */
 .md-tabs {
   background: #ffffff;
   color: var(--ow-deep-navy);
@@ -159,13 +185,12 @@ body, .md-typeset {
 }
 
 /* ---------- HOMEPAGE: full-bleed hero ---------- */
-/* When index.md uses the .ow-hero block, break out of Material's content gutters */
 .md-content .ow-hero {
   position: relative;
   width: 100vw;
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
-  margin-top: -1.5rem;            /* eat the top content padding */
+  margin-top: -1.5rem;
   margin-bottom: 0;
   padding: 6rem 1.5rem 5rem;
   text-align: center;
@@ -194,7 +219,7 @@ body, .md-typeset {
 .md-content .ow-hero__inner {
   position: relative;
   z-index: 2;
-  max-width: 880px;
+  max-width: 1100px;          /* widened to fit 4 buttons across */
   width: 100%;
 }
 
@@ -218,10 +243,11 @@ body, .md-typeset {
 }
 
 .ow-hero__cta {
-  display: inline-flex;
+  display: flex;
   flex-wrap: wrap;
   gap: 1rem;
   justify-content: center;
+  align-items: center;
 }
 
 @media (max-width: 720px) {
@@ -235,11 +261,12 @@ body, .md-typeset {
 .md-typeset a.ow-btn,
 .ow-btn {
   display: inline-block;
-  padding: 14px 32px;
+  padding: 14px 28px;             /* slightly tighter so 4 fit on a row */
   border-radius: 8px;
   font-weight: 600;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   line-height: 1.4;
+  white-space: nowrap;
   text-decoration: none !important;
   border: 2px solid transparent;
   margin: 0;
@@ -282,7 +309,7 @@ body, .md-typeset {
   color: #ffffff;
 }
 
-/* ---------- Stat strip (overlaps hero bottom, like community page) ---------- */
+/* ---------- Stat strip ---------- */
 .ow-stats {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -323,7 +350,7 @@ body, .md-typeset {
   font-size: 0.85rem;
 }
 
-/* ---------- Card grid for landing sections ---------- */
+/* ---------- Card grid ---------- */
 .md-typeset .grid.cards > ul > li {
   border: 2px solid var(--ow-border);
   border-radius: 12px;
@@ -359,14 +386,13 @@ body, .md-typeset {
   color: var(--ow-aqua-bright);
 }
 
-/* ---------- Admonitions ---------- */
+/* ---------- Admonitions / tables / footer ---------- */
 .md-typeset .admonition,
 .md-typeset details {
   border-radius: 10px;
   border-left-width: 4px;
 }
 
-/* ---------- Tables ---------- */
 .md-typeset table:not([class]) th {
   background: var(--ow-light-bg);
   color: var(--ow-deep-navy);
@@ -378,7 +404,6 @@ body, .md-typeset {
   color: var(--ow-aqua-bright);
 }
 
-/* ---------- Footer ---------- */
 .md-footer {
   background: var(--ow-deep-navy);
 }
