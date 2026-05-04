@@ -1,9 +1,10 @@
 # =============================================================================
-# Openwater Documentation — MkDocs configuration (Openwater brand restyle)
-# =============================================================================
-# Visually unified with openwaterhealth.github.io/openwater-community/.
-# Same teal/cyan/navy palette, same hero treatment, same typography.
-# All MkDocs Material features preserved (search, dark mode, code copy, etc).
+# Openwater Documentation — MkDocs configuration v3
+# Changes from v2:
+#   - Removed "Home" from top-level nav (index.md served via the logo/title;
+#     no redundant "Home" tab anymore)
+#   - Removed "Naming Conventions" (file lives at repo root, not docs/ — 404'd)
+#   - Added "Community" as an external link to the community site
 # =============================================================================
 
 site_name: Openwater Documentation
@@ -30,15 +31,13 @@ theme:
   language: en
   logo: assets/openwater-logo.png
   favicon: assets/favicon.ico
-  font: false                    # use system font stack to match community site
+  font: false
   palette:
-    # Light mode (matches community site default)
     - media: "(prefers-color-scheme: light)"
       scheme: openwater
       toggle:
         icon: material/weather-sunny
         name: Switch to dark mode
-    # Dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: custom
@@ -119,9 +118,10 @@ plugins:
 
 # -----------------------------------------------------------------------------
 # Navigation
+# index.md is served as the homepage automatically; no need to list it here
+# (and listing it created a redundant "Home" tab).
 # -----------------------------------------------------------------------------
 nav:
-  - Home: index.md
   - OpenLIFU:
       - Overview: openlifu/index.md
   - OpenMOTION:
@@ -132,7 +132,7 @@ nav:
       - Software Development: openmotion/software.md
       - Hardware Development: openmotion/hardware.md
       - External Connectivity: openmotion/connectivity.md
-  - Naming Conventions: naming-conventions.md
+  - Community: https://openwaterhealth.github.io/openwater-community/
 
 # -----------------------------------------------------------------------------
 # Extra
