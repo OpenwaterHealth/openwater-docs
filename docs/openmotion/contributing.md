@@ -1,6 +1,6 @@
-# Contributing to Open-MOTION
+# Contributing to Open-Motion
 
-Open-MOTION is built in the open and welcomes contributions from researchers,
+Open-Motion is built in the open and welcomes contributions from researchers,
 developers, and clinicians. This page is the developer-facing summary; for the
 full org-wide policy see the
 [Openwater Contributing Guide](https://github.com/OpenwaterHealth/.github/blob/main/CONTRIBUTING.md).
@@ -14,7 +14,7 @@ the Code of Conduct outlines our expectations for all participants.
 
 ## Getting started
 
-1. **Fork the repository.** Start by forking the relevant Open-MOTION
+1. **Fork the repository.** Start by forking the relevant Open-Motion
    repository to your GitHub account. The repo map is in
    [Software Development](software.md#repository-map) and
    [Hardware Development](hardware.md).
