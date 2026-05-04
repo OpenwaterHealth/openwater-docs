@@ -1,5 +1,5 @@
 /* ============================================================================
-   Openwater brand styles for MkDocs Material
+   Openwater brand styles for MkDocs Material — v2 (post-launch refinements)
    Visually mirrors openwaterhealth.github.io/openwater-community/
    ============================================================================ */
 
@@ -20,7 +20,7 @@
   --md-typeset-a-color: #0891B2;
 
   --md-footer-bg-color: #0A2540;
-  --md-footer-bg-color--dark: #0A2540;
+  --md-footer-bg-color--dark: #06283d;
   --md-footer-fg-color: #ffffff;
   --md-footer-fg-color--light: #67E8F9;
   --md-footer-fg-color--lighter: #94A3B8;
@@ -35,7 +35,6 @@
   --ow-border:      #E0F2FE;
 }
 
-/* Slate (dark mode) overrides */
 [data-md-color-scheme="slate"] {
   --md-primary-fg-color:        #06B6D4;
   --md-primary-fg-color--light: #22D3EE;
@@ -60,10 +59,20 @@ body, .md-typeset {
   font-family: var(--md-code-font);
 }
 
-/* ---------- Header ---------- */
-.md-header {
-  background: linear-gradient(135deg, var(--ow-deep-navy) 0%, var(--ow-teal) 100%);
-  box-shadow: 0 2px 10px rgba(8, 145, 178, 0.15);
+/* ---------- WHITE HEADER (matches community page) ---------- */
+.md-header,
+.md-header[data-md-state="shadow"] {
+  background: #ffffff;
+  color: var(--ow-deep-navy);
+  box-shadow: 0 2px 10px rgba(8, 145, 178, 0.10);
+  border-bottom: 2px solid var(--ow-light-bg);
+}
+
+.md-header__title,
+.md-header__topic,
+.md-header__topic > .md-ellipsis,
+.md-header__title > .md-header__topic .md-ellipsis {
+  color: var(--ow-deep-navy);
 }
 
 .md-header__title {
@@ -71,37 +80,107 @@ body, .md-typeset {
   letter-spacing: -0.01em;
 }
 
-/* ---------- Tabs nav ---------- */
-.md-tabs {
+.md-header__button,
+.md-header__button.md-icon,
+.md-header__button.md-logo {
+  color: var(--ow-deep-navy);
+}
+
+.md-header__button:hover {
+  color: var(--ow-teal);
+  opacity: 1;
+}
+
+/* Search bar within white header */
+.md-search__input {
+  background: var(--ow-light-bg);
+  color: var(--ow-deep-navy);
+}
+
+.md-search__input::placeholder {
+  color: var(--md-default-fg-color--light);
+}
+
+.md-search__icon[for="__search"] {
+  color: var(--ow-deep-navy);
+}
+
+/* Dark mode: keep header dark */
+[data-md-color-scheme="slate"] .md-header {
   background: var(--ow-deep-navy);
+  color: #ffffff;
+  border-bottom: 1px solid rgba(34, 211, 238, 0.2);
+}
+
+[data-md-color-scheme="slate"] .md-header__title,
+[data-md-color-scheme="slate"] .md-header__topic,
+[data-md-color-scheme="slate"] .md-header__button {
+  color: #ffffff;
+}
+
+/* ---------- Tabs (also white, matching header) ---------- */
+.md-tabs {
+  background: #ffffff;
+  color: var(--ow-deep-navy);
+  border-bottom: 1px solid var(--ow-light-bg);
 }
 
 .md-tabs__link {
-  opacity: 0.85;
+  color: var(--ow-deep-navy);
+  opacity: 1;
   font-weight: 500;
 }
 
-.md-tabs__link:hover,
-.md-tabs__link--active {
+.md-tabs__link:hover {
+  color: var(--ow-teal);
   opacity: 1;
-  color: var(--ow-aqua-bright);
 }
 
-/* ---------- Hero (used on docs/index.md via custom HTML) ---------- */
-.ow-hero {
+.md-tabs__link--active {
+  color: var(--ow-teal);
+  font-weight: 600;
+  opacity: 1;
+}
+
+[data-md-color-scheme="slate"] .md-tabs {
+  background: var(--ow-deep-navy);
+  border-bottom: 1px solid rgba(34, 211, 238, 0.2);
+}
+
+[data-md-color-scheme="slate"] .md-tabs__link {
+  color: #ffffff;
+  opacity: 0.85;
+}
+
+[data-md-color-scheme="slate"] .md-tabs__link--active,
+[data-md-color-scheme="slate"] .md-tabs__link:hover {
+  color: var(--ow-aqua-bright);
+  opacity: 1;
+}
+
+/* ---------- HOMEPAGE: full-bleed hero ---------- */
+/* When index.md uses the .ow-hero block, break out of Material's content gutters */
+.md-content .ow-hero {
   position: relative;
-  margin: -1.5rem -2rem 2.5rem -2rem;   /* break out of content gutter */
-  padding: 5rem 2rem 4rem;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  margin-top: -1.5rem;            /* eat the top content padding */
+  margin-bottom: 0;
+  padding: 6rem 1.5rem 5rem;
   text-align: center;
   color: #ffffff;
   background-image: url("../assets/openwater-3.png");
   background-size: cover;
   background-position: center;
   overflow: hidden;
-  border-radius: 0;
+  min-height: 540px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.ow-hero::before {
+.md-content .ow-hero::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -112,92 +191,109 @@ body, .md-typeset {
   z-index: 1;
 }
 
-.ow-hero__inner {
+.md-content .ow-hero__inner {
   position: relative;
   z-index: 2;
   max-width: 880px;
-  margin: 0 auto;
+  width: 100%;
 }
 
-.ow-hero h1 {
-  font-size: 2.75rem;
+.md-content .ow-hero h1 {
+  font-size: 3rem;
   font-weight: 700;
   line-height: 1.15;
-  margin: 0 0 1rem;
+  margin: 0 0 1.25rem;
   text-shadow: 0 2px 12px rgba(0,0,0,0.35);
   color: #ffffff;
 }
 
-.ow-hero p {
-  font-size: 1.25rem;
+.md-content .ow-hero p {
+  font-size: 1.35rem;
   line-height: 1.5;
   margin: 0 auto 2rem;
   max-width: 720px;
   opacity: 0.95;
   text-shadow: 0 1px 8px rgba(0,0,0,0.25);
+  color: #ffffff;
 }
 
 .ow-hero__cta {
   display: inline-flex;
   flex-wrap: wrap;
-  gap: 0.75rem;
+  gap: 1rem;
   justify-content: center;
 }
 
-.ow-btn {
-  display: inline-block;
-  padding: 0.75rem 1.5rem;
-  border-radius: 8px;
-  font-weight: 600;
-  font-size: 1rem;
-  text-decoration: none;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
-  border: 2px solid transparent;
+@media (max-width: 720px) {
+  .md-content .ow-hero { padding: 4rem 1.25rem 3rem; min-height: 420px; }
+  .md-content .ow-hero h1 { font-size: 2.1rem; }
+  .md-content .ow-hero p  { font-size: 1.1rem; }
 }
 
-.ow-btn--primary {
+/* ---------- BUTTONS (match community sizing exactly, override Material) ---------- */
+.md-typeset .ow-btn,
+.md-typeset a.ow-btn,
+.ow-btn {
+  display: inline-block;
+  padding: 14px 32px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  line-height: 1.4;
+  text-decoration: none !important;
+  border: 2px solid transparent;
+  margin: 0;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+  cursor: pointer;
+}
+
+.md-typeset .ow-btn:hover,
+.md-typeset a.ow-btn:hover {
+  text-decoration: none !important;
+}
+
+.ow-btn--primary,
+.md-typeset a.ow-btn--primary {
   background: var(--ow-cyan);
   color: var(--ow-deep-navy);
 }
 
-.ow-btn--primary:hover {
+.ow-btn--primary:hover,
+.md-typeset a.ow-btn--primary:hover {
   background: var(--ow-aqua-light);
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(34, 211, 238, 0.35);
   color: var(--ow-deep-navy);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(34, 211, 238, 0.4);
 }
 
-.ow-btn--ghost {
-  background: rgba(255, 255, 255, 0.08);
+.ow-btn--ghost,
+.md-typeset a.ow-btn--ghost {
+  background: rgba(255, 255, 255, 0.10);
   color: #ffffff;
   border-color: var(--ow-aqua-light);
-  backdrop-filter: blur(6px);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
-.ow-btn--ghost:hover {
-  background: rgba(34, 211, 238, 0.18);
+.ow-btn--ghost:hover,
+.md-typeset a.ow-btn--ghost:hover {
+  background: rgba(34, 211, 238, 0.20);
   border-color: var(--ow-aqua-bright);
   color: #ffffff;
 }
 
-@media (max-width: 720px) {
-  .ow-hero { padding: 3.5rem 1.25rem 2.5rem; }
-  .ow-hero h1 { font-size: 2rem; }
-  .ow-hero p  { font-size: 1.05rem; }
-}
-
-/* ---------- Stat strip (matches community dashboard) ---------- */
+/* ---------- Stat strip (overlaps hero bottom, like community page) ---------- */
 .ow-stats {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 1.5rem;
-  max-width: 1100px;
-  margin: -2.5rem auto 3rem;
-  padding: 2rem 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2.5rem;
+  max-width: 1200px;
+  margin: -40px auto 3rem;
+  padding: 2.5rem;
   background: #ffffff;
   border-radius: 16px;
   border-top: 4px solid var(--ow-cyan);
-  box-shadow: 0 16px 40px rgba(8, 145, 178, 0.15);
+  box-shadow: 0 20px 60px rgba(8, 145, 178, 0.15);
   position: relative;
   z-index: 3;
 }
@@ -205,7 +301,7 @@ body, .md-typeset {
 .ow-stats__item { text-align: center; }
 .ow-stats__num {
   display: block;
-  font-size: 2.25rem;
+  font-size: 3rem;
   font-weight: 700;
   background: linear-gradient(135deg, var(--ow-teal), var(--ow-cyan), var(--ow-aqua-light));
   -webkit-background-clip: text;
@@ -215,16 +311,16 @@ body, .md-typeset {
 }
 .ow-stats__label {
   display: block;
-  margin-top: 0.4rem;
+  margin-top: 0.5rem;
   color: var(--ow-deep-navy);
   font-weight: 500;
   font-size: 0.95rem;
 }
 .ow-stats__sub {
   display: block;
-  margin-top: 0.2rem;
+  margin-top: 0.25rem;
   color: var(--md-default-fg-color--light);
-  font-size: 0.8rem;
+  font-size: 0.85rem;
 }
 
 /* ---------- Card grid for landing sections ---------- */
@@ -232,7 +328,7 @@ body, .md-typeset {
   border: 2px solid var(--ow-border);
   border-radius: 12px;
   background: #ffffff;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
 }
 
 .md-typeset .grid.cards > ul > li:hover {
@@ -263,7 +359,7 @@ body, .md-typeset {
   color: var(--ow-aqua-bright);
 }
 
-/* ---------- Admonitions: tighter, brand-aligned accents ---------- */
+/* ---------- Admonitions ---------- */
 .md-typeset .admonition,
 .md-typeset details {
   border-radius: 10px;
@@ -282,7 +378,7 @@ body, .md-typeset {
   color: var(--ow-aqua-bright);
 }
 
-/* ---------- Footer polish ---------- */
+/* ---------- Footer ---------- */
 .md-footer {
   background: var(--ow-deep-navy);
 }
