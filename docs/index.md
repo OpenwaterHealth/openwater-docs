@@ -13,7 +13,7 @@ hide:
       software — fully open-source.
     </p>
     <div class="ow-hero__cta">
-      <a href="openmotion/" class="ow-btn ow-btn--primary">Start with Open-MOTION</a>
+      <a href="openmotion/" class="ow-btn ow-btn--primary">Start with Open-Motion</a>
       <a href="openlifu/" class="ow-btn ow-btn--ghost">Start with Open-LIFU</a>
       <a href="https://github.com/OpenwaterHealth" class="ow-btn ow-btn--ghost">View on GitHub</a>
       <a href="https://discord.gg/fS7vfAX4fA" class="ow-btn ow-btn--ghost">Join Discord</a>
