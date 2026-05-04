@@ -31,7 +31,7 @@ hide:
   <div class="ow-stats__item">
     <span class="ow-stats__num">2</span>
     <span class="ow-stats__label">Core Platforms</span>
-    <span class="ow-stats__sub">Open-LIFU &amp; Open-MOTION</span>
+    <span class="ow-stats__sub">Open-LIFU &amp; Open-Motion</span>
   </div>
   <div class="ow-stats__item">
     <span class="ow-stats__num">Live</span>
@@ -66,7 +66,7 @@ fabricating their own hardware revisions.
 
     [:octicons-arrow-right-24: Open-LIFU documentation](openlifu/index.md)
 
--   :material-pulse:{ .lg .middle } __Open-MOTION__
+-   :material-pulse:{ .lg .middle } __Open-Motion__
 
     ---
 
@@ -74,7 +74,7 @@ fabricating their own hardware revisions.
     measurement. Modular console + sensor module architecture with on-board
     histogram processing, controlled from Python.
 
-    [:octicons-arrow-right-24: Open-MOTION documentation](openmotion/index.md)
+    [:octicons-arrow-right-24: Open-Motion documentation](openmotion/index.md)
 
 </div>
 
