@@ -60,7 +60,6 @@ fabricating their own hardware revisions.
 <div class="grid cards" markdown>
 
 
-
 - :material-brain:{ .lg .middle } __Open-LIFU__
 
   ---
@@ -86,7 +85,6 @@ fabricating their own hardware revisions.
 ## Get involved
 
 <div class="grid cards" markdown>
-
 
 
 - :fontawesome-brands-github:{ .lg .middle } __Code on GitHub__
