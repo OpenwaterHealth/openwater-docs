@@ -1,3 +1,10 @@
+---
+hide:
+  - navigation
+  - toc
+
+---
+
 <div class="ow-hero">
   <div class="ow-hero__inner">
     <h1>Build the future of medical devices, in the open.</h1>
@@ -14,6 +21,7 @@
     </div>
   </div>
 </div>
+
 
 
 <div class="ow-stats">
@@ -35,6 +43,7 @@
 </div>
 
 
+
 ## What is Openwater?
 
 Openwater is an open-source ecosystem for medical device innovation. We build the
@@ -49,6 +58,7 @@ fabricating their own hardware revisions.
 ## The two platforms
 
 <div class="grid cards" markdown>
+
 
 
 - :material-brain:{ .lg .middle } __Open-LIFU__
@@ -76,6 +86,7 @@ fabricating their own hardware revisions.
 ## Get involved
 
 <div class="grid cards" markdown>
+
 
 
 - :fontawesome-brands-github:{ .lg .middle } __Code on GitHub__
