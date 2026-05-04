@@ -1,12 +1,13 @@
 # =============================================================================
-# Openwater Documentation — MkDocs configuration
+# Openwater Documentation — MkDocs configuration (Openwater brand restyle)
 # =============================================================================
-# Goal: a working build today. Nav references only pages that actually exist.
-# As content lands (Step 3 of the plumbing fix), expand the nav.
+# Visually unified with openwaterhealth.github.io/openwater-community/.
+# Same teal/cyan/navy palette, same hero treatment, same typography.
+# All MkDocs Material features preserved (search, dark mode, code copy, etc).
 # =============================================================================
 
 site_name: Openwater Documentation
-site_description: Open-source medical device platforms — OpenLIFU and OpenMOTION
+site_description: Open-source medical device platforms — Open-LIFU and Open-MOTION
 site_url: https://docs.openwater.health
 site_author: Openwater Health
 
@@ -15,11 +16,11 @@ repo_name: OpenwaterHealth/openwater-docs
 edit_uri: edit/main/docs/
 
 copyright: >
-  Copyright &copy; 2026 Openwater Health.
+  Copyright &copy; 2026 Openwater Health. Open Source. Always.<br>
   Documentation licensed under
   <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>.
-  Code samples under
-  <a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank" rel="noopener">Apache 2.0</a>.
+  Hardware designs under
+  <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>.
 
 # -----------------------------------------------------------------------------
 # Theme
@@ -29,23 +30,19 @@ theme:
   language: en
   logo: assets/openwater-logo.png
   favicon: assets/favicon.ico
-  font:
-    text: Inter
-    code: JetBrains Mono
+  font: false                    # use system font stack to match community site
   palette:
-    # Light mode
+    # Light mode (matches community site default)
     - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: teal
-      accent: cyan
+      scheme: openwater
       toggle:
         icon: material/weather-sunny
         name: Switch to dark mode
     # Dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: teal
-      accent: cyan
+      primary: custom
+      accent: custom
       toggle:
         icon: material/weather-night
         name: Switch to light mode
@@ -57,6 +54,7 @@ theme:
     - navigation.sections
     - navigation.top
     - navigation.footer
+    - navigation.indexes
     - search.suggest
     - search.highlight
     - search.share
@@ -66,6 +64,10 @@ theme:
     - content.action.view
     - content.tabs.link
     - toc.follow
+  icon:
+    repo: fontawesome/brands/github
+    edit: material/pencil
+    view: material/eye
 
 extra_css:
   - stylesheets/extra.css
@@ -73,7 +75,7 @@ extra_javascript:
   - javascripts/extra.js
 
 # -----------------------------------------------------------------------------
-# Markdown extensions (matches the syntax already used in docs/index.md)
+# Markdown extensions
 # -----------------------------------------------------------------------------
 markdown_extensions:
   - admonition
@@ -116,9 +118,7 @@ plugins:
       lang: en
 
 # -----------------------------------------------------------------------------
-# Navigation — only pages that exist today
-# Add entries to this list as content is ported. Mkdocs will warn (not fail)
-# on .md files in docs/ that aren't referenced here, which is fine for now.
+# Navigation
 # -----------------------------------------------------------------------------
 nav:
   - Home: index.md
@@ -126,15 +126,19 @@ nav:
       - Overview: openlifu/index.md
   - OpenMOTION:
       - Overview: openmotion/index.md
-  - Naming Conventions: naming-conventions.md  # NOTE: outside docs/, see docs_dir below
-
-# If naming-conventions.md should be served, move it into docs/ in this PR
-# rather than referencing it from outside. See "post-merge cleanup" below.
+      - Best Practices: openmotion/best-practices.md
+      - Contributing: openmotion/contributing.md
+      - The Open-Motion System: openmotion/system.md
+      - Software Development: openmotion/software.md
+      - Hardware Development: openmotion/hardware.md
+      - External Connectivity: openmotion/connectivity.md
+  - Naming Conventions: naming-conventions.md
 
 # -----------------------------------------------------------------------------
 # Extra
 # -----------------------------------------------------------------------------
 extra:
+  homepage: https://openwater.health
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/OpenwaterHealth
@@ -148,12 +152,12 @@ extra:
     - icon: fontawesome/brands/youtube
       link: https://www.youtube.com/channel/UCvoo5XMm3a7wfeiVkBosznw
       name: Subscribe on YouTube
-  generator: false  # hide "Made with Material for MkDocs" footer
+  generator: false
 
 # -----------------------------------------------------------------------------
 # Build behavior
 # -----------------------------------------------------------------------------
-strict: false   # warn but do not fail on broken links during the cleanup arc
+strict: false
 docs_dir: docs
 site_dir: site
 use_directory_urls: true
