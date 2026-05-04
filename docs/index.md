@@ -9,7 +9,7 @@ hide:
     <h1>Build the future of medical devices, in the open.</h1>
     <p>
       Openwater Developer Documentation for the Open-LIFU focused-ultrasound platform
-      and the Open-MOTION optical blood-flow imaging platform. Hardware, firmware, and
+      and the Open-Motion optical blood-flow imaging platform. Hardware, firmware, and
       software — fully open-source.
     </p>
     <div class="ow-hero__cta">
