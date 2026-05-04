@@ -122,9 +122,9 @@ plugins:
 # (and listing it created a redundant "Home" tab).
 # -----------------------------------------------------------------------------
 nav:
-  - OpenLIFU:
+  - Open-LIFU:
       - Overview: openlifu/index.md
-  - OpenMOTION:
+  - Open-Motion:
       - Overview: openmotion/index.md
       - Best Practices: openmotion/best-practices.md
       - Contributing: openmotion/contributing.md
