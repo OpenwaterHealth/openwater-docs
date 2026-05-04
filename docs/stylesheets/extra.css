@@ -1,12 +1,9 @@
 /* ============================================================================
-   Openwater brand styles for MkDocs Material — v4
-   v4 changes:
-     - Tighter hero (smaller height, smaller h1/p) — closer to docs banner
-       than marketing landing
-     - Buttons sized down to match community proportions
-     - Wider content container (1400px) so cards/text below hero use full width
-     - Force-hide TOC sidebar and back-to-top button on the homepage as a
-       belt + suspenders backup to the index.md frontmatter
+   Openwater brand styles for MkDocs Material — v5
+   v5 changes: explicit, aggressive card layout for .grid.cards (the v4 cards
+   were inheriting Material defaults inconsistently and the description / link
+   were rendering outside the card box). Now everything inside <li> is forced
+   into the same visible card.
    ============================================================================ */
 
 /* ---------- Brand palette ---------- */
@@ -64,7 +61,7 @@ body, .md-typeset {
   font-family: var(--md-code-font);
 }
 
-/* ---------- WIDER CONTENT (cards/text use up to 1400px, like community) ---------- */
+/* ---------- WIDER CONTENT ---------- */
 .md-grid {
   max-width: 1400px;
 }
@@ -197,7 +194,7 @@ body, .md-typeset {
   display: none !important;
 }
 
-/* ---------- HOMEPAGE: tighter, docs-style hero (not marketing-loud) ---------- */
+/* ---------- HOMEPAGE: tighter, docs-style hero ---------- */
 .md-content .ow-hero {
   position: relative;
   width: 100vw;
@@ -271,7 +268,7 @@ body, .md-typeset {
   .md-content .ow-hero p,  .md-typeset .ow-hero p  { font-size: 1.05rem; }
 }
 
-/* ---------- BUTTONS (smaller, fit 4 across cleanly) ---------- */
+/* ---------- BUTTONS ---------- */
 .md-typeset .ow-btn,
 .md-typeset a.ow-btn,
 .ow-btn {
@@ -365,23 +362,119 @@ body, .md-typeset {
   font-size: 0.8rem;
 }
 
-/* ---------- Card grid ---------- */
-.md-typeset .grid.cards > ul > li {
-  border: 2px solid var(--ow-border);
-  border-radius: 12px;
-  background: #ffffff;
+/* ============================================================================
+   GRID CARDS — explicit, aggressive layout (the v5 fix)
+   The HTML output is correct (each <li> contains title, hr, description, link)
+   but earlier CSS was inheriting Material defaults inconsistently. These
+   rules force the layout, padding, and visual containment so every <li>
+   renders as a single self-contained card.
+   ============================================================================ */
+
+/* The .grid container becomes the explicit grid; .cards modifies it */
+.md-typeset .grid.cards {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) !important;
+  gap: 1.25rem !important;
+  margin: 2rem 0 !important;
+  padding: 0 !important;
+  list-style: none !important;
+}
+
+/* The <ul> inside .grid.cards is transparent: its <li>s become grid items */
+.md-typeset .grid.cards > ul {
+  display: contents !important;
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Each <li> is a self-contained card */
+.md-typeset .grid.cards > ul > li,
+.md-typeset .grid > .card {
+  display: block !important;
+  padding: 1.5rem 1.5rem 1.25rem !important;
+  margin: 0 !important;
+  border: 2px solid var(--ow-border) !important;
+  border-radius: 12px !important;
+  background: #ffffff !important;
+  list-style: none !important;
+  position: relative;
   transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
 }
 
-.md-typeset .grid.cards > ul > li:hover {
+.md-typeset .grid.cards > ul > li:hover,
+.md-typeset .grid > .card:hover {
   transform: translateY(-3px);
-  border-color: var(--ow-cyan);
+  border-color: var(--ow-cyan) !important;
   box-shadow: 0 12px 32px rgba(8, 145, 178, 0.15);
 }
 
-[data-md-color-scheme="slate"] .md-typeset .grid.cards > ul > li {
-  background: rgba(15, 23, 42, 0.4);
-  border-color: rgba(34, 211, 238, 0.25);
+/* Title (first <p> of each <li>) — bigger, bolder */
+.md-typeset .grid.cards > ul > li > p:first-child {
+  margin: 0 0 0.5rem !important;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--ow-deep-navy);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Inline icon next to the title */
+.md-typeset .grid.cards > ul > li > p:first-child .twemoji {
+  flex-shrink: 0;
+}
+
+.md-typeset .grid.cards > ul > li > p:first-child .twemoji svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: var(--ow-teal);
+}
+
+/* The horizontal rule that separates title from body */
+.md-typeset .grid.cards > ul > li > hr {
+  margin: 0.25rem 0 0.85rem !important;
+  border: 0 !important;
+  border-top: 1px solid var(--ow-border) !important;
+  height: 0;
+}
+
+/* Description paragraph(s) */
+.md-typeset .grid.cards > ul > li > p:not(:first-child) {
+  margin: 0 0 0.85rem !important;
+  color: var(--md-default-fg-color--light);
+  line-height: 1.55;
+}
+
+/* Final paragraph (typically the link) */
+.md-typeset .grid.cards > ul > li > p:last-child {
+  margin: 0 !important;
+}
+
+.md-typeset .grid.cards > ul > li a {
+  color: var(--ow-teal);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.md-typeset .grid.cards > ul > li a:hover {
+  color: var(--ow-cyan);
+  text-decoration: none;
+}
+
+/* Dark mode card overrides */
+[data-md-color-scheme="slate"] .md-typeset .grid.cards > ul > li,
+[data-md-color-scheme="slate"] .md-typeset .grid > .card {
+  background: rgba(15, 23, 42, 0.5) !important;
+  border-color: rgba(34, 211, 238, 0.25) !important;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .grid.cards > ul > li > p:first-child {
+  color: var(--ow-aqua-bright);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .grid.cards > ul > li > hr {
+  border-top-color: rgba(34, 211, 238, 0.18) !important;
 }
 
 /* ---------- Headings ---------- */
