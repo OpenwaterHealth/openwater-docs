@@ -1,12 +1,3 @@
----
-title: Openwater Developer Documentation
-description: Build with Open-LIFU and Open-MOTION — open-source medical device platforms.
-hide:
-  - navigation
-  - toc
-
----
-
 <div class="ow-hero">
   <div class="ow-hero__inner">
     <h1>Build the future of medical devices, in the open.</h1>
