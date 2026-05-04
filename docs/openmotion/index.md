@@ -1,9 +1,9 @@
-# Open-MOTION Developer Documentation
+# Open-Motion Developer Documentation
 
 > **Document ID:** ER-00014 · **Revision:** A · **Released:** 2026-04-15
 > **Authors:** David Paribello, Ethan Head, George Vigelette, Dan Blizinski
 
-Open-MOTION is a modular, open-source platform for laboratory research that uses
+Open-Motion is a modular, open-source platform for laboratory research that uses
 low-intensity near-infrared light to measure blood flow, blood volume, and
 micro-motions deep within tissue. The system is configurable, portable, and
 fully open-source — firmware, FPGA logic, and host software are all available
@@ -56,7 +56,7 @@ is also available for archival download.
 
 </div>
 
-## What Open-MOTION is
+## What Open-Motion is
 
 The system consists of:
 
@@ -90,7 +90,7 @@ roadmap. The SDK and reference applications are written in Python.
 ## Investigational device — research use only
 
 !!! danger "Read before you build"
-    The Open-MOTION platform is **not yet cleared by the FDA** and is intended
+    The Open-Motion platform is **not yet cleared by the FDA** and is intended
     for research purposes only. Not for commercial sale. This device and
     documentation are intended strictly for laboratory research and development;
     clinical or diagnostic use is prohibited.
