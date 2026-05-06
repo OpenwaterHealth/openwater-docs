@@ -132,6 +132,7 @@ nav:
       - Software Development: openmotion/software.md
       - Hardware Development: openmotion/hardware.md
       - External Connectivity: openmotion/connectivity.md
+      - Latest Software Release: https://github.com/OpenwaterHealth/openmotion-bloodflow-app/releases/latest
   - Community: https://openwaterhealth.github.io/openwater-community/
 
 # -----------------------------------------------------------------------------
