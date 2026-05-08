@@ -10,12 +10,12 @@ hide:
     <h1>Build the future of medical devices, in the open.</h1>
     <p>
       Openwater Developer Documentation for the Open-LIFU focused-ultrasound platform
-      and the Open-MOTION optical blood-flow imaging platform. Hardware, firmware, and
+      and the Open-Motion optical blood-flow imaging platform. Hardware, firmware, and
       software — fully open-source.
     </p>
     <div class="ow-hero__cta">
       <a href="openlifu/" class="ow-btn ow-btn--ghost">Start with Open-LIFU</a>
-      <a href="openmotion/" class="ow-btn ow-btn--ghost">Start with Open-MOTION</a>
+      <a href="openmotion/" class="ow-btn ow-btn--ghost">Start with Open-Motion</a>
       <a href="https://github.com/OpenwaterHealth" class="ow-btn ow-btn--ghost">View on GitHub</a>
       <a href="https://discord.gg/fS7vfAX4fA" class="ow-btn ow-btn--ghost">Join Discord</a>
     </div>
@@ -33,7 +33,7 @@ hide:
   <div class="ow-stats__item">
     <span class="ow-stats__num">2</span>
     <span class="ow-stats__label">Core Platforms</span>
-    <span class="ow-stats__sub">Open-LIFU &amp; Open-MOTION</span>
+    <span class="ow-stats__sub">Open-LIFU &amp; Open-Motion</span>
   </div>
   <div class="ow-stats__item">
     <span class="ow-stats__num">Live</span>
@@ -70,7 +70,7 @@ fabricating their own hardware revisions.
 
   [:octicons-arrow-right-24: Open-LIFU documentation](openlifu/index.md)
 
-- :material-pulse:{ .lg .middle } __Open-MOTION__
+- :material-pulse:{ .lg .middle } __Open-Motion__
 
   ---
 
@@ -78,7 +78,7 @@ fabricating their own hardware revisions.
   measurement. Modular console + sensor module architecture with on-board
   histogram processing, controlled from Python.
 
-  [:octicons-arrow-right-24: Open-MOTION documentation](openmotion/index.md)
+  [:octicons-arrow-right-24: Open-Motion documentation](openmotion/index.md)
 
 </div>
 
