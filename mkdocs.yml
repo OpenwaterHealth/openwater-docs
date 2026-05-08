@@ -1,9 +1,9 @@
 # =============================================================================
-# Openwater Documentation — MkDocs configuration v4
-# Changes from v3:
-#   - OpenLIFU nav expanded with Best Practices, Contributing, System,
-#     Software, Hardware, Slicer Modules subpages (matching the OpenMOTION
-#     pattern)
+# Openwater Documentation — MkDocs configuration v5
+# Changes from v4:
+#   - Removed extra.homepage so clicking the logo navigates to the docs
+#     root (docs.openwater.health) instead of leaving the site for
+#     openwater.health. Standard docs-site convention.
 # =============================================================================
 
 site_name: Openwater Documentation
@@ -141,7 +141,6 @@ nav:
 # Extra
 # -----------------------------------------------------------------------------
 extra:
-  homepage: https://openwater.health
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/OpenwaterHealth
