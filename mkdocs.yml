@@ -1,10 +1,9 @@
 # =============================================================================
-# Openwater Documentation — MkDocs configuration v3
-# Changes from v2:
-#   - Removed "Home" from top-level nav (index.md served via the logo/title;
-#     no redundant "Home" tab anymore)
-#   - Removed "Naming Conventions" (file lives at repo root, not docs/ — 404'd)
-#   - Added "Community" as an external link to the community site
+# Openwater Documentation — MkDocs configuration v4
+# Changes from v3:
+#   - OpenLIFU nav expanded with Best Practices, Contributing, System,
+#     Software, Hardware, Slicer Modules subpages (matching the OpenMOTION
+#     pattern)
 # =============================================================================
 
 site_name: Openwater Documentation
@@ -118,13 +117,17 @@ plugins:
 
 # -----------------------------------------------------------------------------
 # Navigation
-# index.md is served as the homepage automatically; no need to list it here
-# (and listing it created a redundant "Home" tab).
 # -----------------------------------------------------------------------------
 nav:
-  - Open-LIFU:
+  - OpenLIFU:
       - Overview: openlifu/index.md
-  - Open-Motion:
+      - Best Practices: openlifu/best-practices.md
+      - Contributing: openlifu/contributing.md
+      - The Open-LIFU System: openlifu/system.md
+      - Software Development: openlifu/software.md
+      - Hardware Development: openlifu/hardware.md
+      - Slicer Open-LIFU: openlifu/slicer.md
+  - OpenMOTION:
       - Overview: openmotion/index.md
       - Best Practices: openmotion/best-practices.md
       - Contributing: openmotion/contributing.md
@@ -132,7 +135,6 @@ nav:
       - Software Development: openmotion/software.md
       - Hardware Development: openmotion/hardware.md
       - External Connectivity: openmotion/connectivity.md
-      - Latest Software Release: https://github.com/OpenwaterHealth/openmotion-bloodflow-app/releases/latest
   - Community: https://openwaterhealth.github.io/openwater-community/
 
 # -----------------------------------------------------------------------------
