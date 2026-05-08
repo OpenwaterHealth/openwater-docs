@@ -127,8 +127,8 @@ nav:
       - Software Development: openlifu/software.md
       - Hardware Development: openlifu/hardware.md
       - Slicer Open-LIFU: openlifu/slicer.md
-      - Latest 3D Slicer LIFU Software Release: https://github.com/OpenwaterHealth/SlicerOpenLIFU/releases/latest
-      - Latest Open-LIFU Test Application Release: https://github.com/OpenwaterHealth/openlifu-test-app/releases/latest
+      - Latest 3D Slicer LIFU Software: https://github.com/OpenwaterHealth/SlicerOpenLIFU/releases/latest
+      - Latest Open-LIFU Test Application: https://github.com/OpenwaterHealth/openlifu-test-app/releases/latest
       
   - Open-Motion:
       - Overview: openmotion/index.md
