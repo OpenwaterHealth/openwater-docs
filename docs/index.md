@@ -2,6 +2,7 @@
 hide:
   - navigation
   - toc
+
 ---
 
 <div class="ow-hero">
@@ -9,17 +10,18 @@ hide:
     <h1>Build the future of medical devices, in the open.</h1>
     <p>
       Openwater Developer Documentation for the Open-LIFU focused-ultrasound platform
-      and the Open-Motion optical blood-flow imaging platform. Hardware, firmware, and
+      and the Open-MOTION optical blood-flow imaging platform. Hardware, firmware, and
       software — fully open-source.
     </p>
     <div class="ow-hero__cta">
-      <a href="openmotion/" class="ow-btn ow-btn--primary">Start with Open-Motion</a>
       <a href="openlifu/" class="ow-btn ow-btn--ghost">Start with Open-LIFU</a>
+      <a href="openmotion/" class="ow-btn ow-btn--ghost">Start with Open-MOTION</a>
       <a href="https://github.com/OpenwaterHealth" class="ow-btn ow-btn--ghost">View on GitHub</a>
       <a href="https://discord.gg/fS7vfAX4fA" class="ow-btn ow-btn--ghost">Join Discord</a>
     </div>
   </div>
 </div>
+
 
 
 <div class="ow-stats">
@@ -31,7 +33,7 @@ hide:
   <div class="ow-stats__item">
     <span class="ow-stats__num">2</span>
     <span class="ow-stats__label">Core Platforms</span>
-    <span class="ow-stats__sub">Open-LIFU &amp; Open-Motion</span>
+    <span class="ow-stats__sub">Open-LIFU &amp; Open-MOTION</span>
   </div>
   <div class="ow-stats__item">
     <span class="ow-stats__num">Live</span>
@@ -39,6 +41,7 @@ hide:
     <span class="ow-stats__sub">docs.openwater.health</span>
   </div>
 </div>
+
 
 
 ## What is Openwater?
@@ -56,25 +59,26 @@ fabricating their own hardware revisions.
 
 <div class="grid cards" markdown>
 
--   :material-brain:{ .lg .middle } __Open-LIFU__
 
-    ---
+- :material-brain:{ .lg .middle } __Open-LIFU__
 
-    Low-Intensity Focused Ultrasound for non-invasive neuromodulation research.
-    Treatment planning, simulation, transducer control, and clinical-style
-    sonication workflows through Python and 3D Slicer.
+  ---
 
-    [:octicons-arrow-right-24: Open-LIFU documentation](openlifu/index.md)
+  Low-Intensity Focused Ultrasound for non-invasive neuromodulation research.
+  Treatment planning, simulation, transducer control, and clinical-style
+  sonication workflows through Python and 3D Slicer.
 
--   :material-pulse:{ .lg .middle } __Open-Motion__
+  [:octicons-arrow-right-24: Open-LIFU documentation](openlifu/index.md)
 
-    ---
+- :material-pulse:{ .lg .middle } __Open-MOTION__
 
-    Near-infrared optical imaging for non-invasive blood flow and micro-motion
-    measurement. Modular console + sensor module architecture with on-board
-    histogram processing, controlled from Python.
+  ---
 
-    [:octicons-arrow-right-24: Open-Motion documentation](openmotion/index.md)
+  Near-infrared optical imaging for non-invasive blood flow and micro-motion
+  measurement. Modular console + sensor module architecture with on-board
+  histogram processing, controlled from Python.
+
+  [:octicons-arrow-right-24: Open-MOTION documentation](openmotion/index.md)
 
 </div>
 
@@ -82,41 +86,42 @@ fabricating their own hardware revisions.
 
 <div class="grid cards" markdown>
 
--   :fontawesome-brands-github:{ .lg .middle } __Code on GitHub__
 
-    ---
+- :fontawesome-brands-github:{ .lg .middle } __Code on GitHub__
 
-    Every repo, every revision, every issue. Browse the platforms, file bugs, or
-    open a pull request.
+  ---
 
-    [:octicons-arrow-right-24: github.com/OpenwaterHealth](https://github.com/OpenwaterHealth)
+  Every repo, every revision, every issue. Browse the platforms, file bugs, or
+  open a pull request.
 
--   :fontawesome-brands-discord:{ .lg .middle } __Discord community__
+  [:octicons-arrow-right-24: github.com/OpenwaterHealth](https://github.com/OpenwaterHealth)
 
-    ---
+- :fontawesome-brands-discord:{ .lg .middle } __Discord community__
 
-    Where developers, researchers, and clinicians actually talk to each other. Ask
-    questions, share what you're building, get help.
+  ---
 
-    [:octicons-arrow-right-24: Join Discord](https://discord.gg/fS7vfAX4fA)
+  Where developers, researchers, and clinicians actually talk to each other. Ask
+  questions, share what you're building, get help.
 
--   :material-handshake:{ .lg .middle } __Contribute__
+  [:octicons-arrow-right-24: Join Discord](https://discord.gg/fS7vfAX4fA)
 
-    ---
+- :material-handshake:{ .lg .middle } __Contribute__
 
-    Read the contribution guide, sign the CLA, pick a "good first issue," and ship
-    a pull request.
+  ---
 
-    [:octicons-arrow-right-24: Contributing guide](https://github.com/OpenwaterHealth/.github/blob/main/CONTRIBUTING.md)
+  Read the contribution guide, sign the CLA, pick a "good first issue," and ship
+  a pull request.
 
--   :material-scale-balance:{ .lg .middle } __Governance__
+  [:octicons-arrow-right-24: Contributing guide](https://github.com/OpenwaterHealth/.github/blob/main/CONTRIBUTING.md)
 
-    ---
+- :material-scale-balance:{ .lg .middle } __Governance__
 
-    A Technical Steering Committee model adapted from CNCF and the Linux Foundation,
-    tuned for open-source medical device development.
+  ---
 
-    [:octicons-arrow-right-24: Governance charter](https://github.com/OpenwaterHealth/.github/blob/main/GOVERNANCE.md)
+  A Technical Steering Committee model adapted from CNCF and the Linux Foundation,
+  tuned for open-source medical device development.
+
+  [:octicons-arrow-right-24: Governance charter](https://github.com/OpenwaterHealth/.github/blob/main/GOVERNANCE.md)
 
 </div>
 
