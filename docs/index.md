@@ -74,7 +74,7 @@ fabricating their own hardware revisions.
     measurement. Modular console + sensor module architecture with on-board
     histogram processing, controlled from Python.
 
-    [:octicons-arrow-right-24: Open-MOTION documentation](openmotion/index.md)
+    [:octicons-arrow-right-24: Open-Motion documentation](openmotion/index.md)
 
 </div>
 
