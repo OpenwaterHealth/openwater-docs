@@ -7,7 +7,7 @@
 # =============================================================================
 
 site_name: Openwater Documentation
-site_description: Open-source medical device platforms — Open-LIFU and Open-MOTION
+site_description: Open-source medical device platforms — Open-LIFU and Open-Motion
 site_url: https://docs.openwater.health
 site_author: Openwater Health
 
@@ -119,7 +119,7 @@ plugins:
 # Navigation
 # -----------------------------------------------------------------------------
 nav:
-  - OpenLIFU:
+  - Open-LIFU:
       - Overview: openlifu/index.md
       - Best Practices: openlifu/best-practices.md
       - Contributing: openlifu/contributing.md
@@ -127,7 +127,7 @@ nav:
       - Software Development: openlifu/software.md
       - Hardware Development: openlifu/hardware.md
       - Slicer Open-LIFU: openlifu/slicer.md
-  - OpenMOTION:
+  - Open-Motion:
       - Overview: openmotion/index.md
       - Best Practices: openmotion/best-practices.md
       - Contributing: openmotion/contributing.md
