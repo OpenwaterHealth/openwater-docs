@@ -26,7 +26,7 @@ hide:
   <div class="ow-stats__item">
     <span class="ow-stats__num">Open</span>
     <span class="ow-stats__label">Source, Always</span>
-    <span class="ow-stats__sub">AGPL · CC BY-SA 4.0</span>
+    <span class="ow-stats__sub">AGPL 3.0 · CC BY-SA 4.0</span>
   </div>
   <div class="ow-stats__item">
     <span class="ow-stats__num">2</span>
