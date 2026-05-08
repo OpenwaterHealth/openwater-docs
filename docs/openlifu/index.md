@@ -20,44 +20,43 @@ is also available for archival download.
 
 <div class="grid cards" markdown>
 
+-   :material-cog-outline:{ .lg .middle } __System overview__
 
-- :material-cog-outline:{ .lg .middle } __System overview__
+    ---
 
-  ---
+    Three primary components: Console, Transducer (with one or more transmit
+    modules), and a coupling pad. Specifications, system architecture, and
+    hardware components.
 
-  Three primary components: Console, Transducer (with one or more transmit
-  modules), and a coupling pad. Specifications, system architecture, and
-  hardware components.
+    [:octicons-arrow-right-24: The Open-LIFU System](system.md)
 
-  [:octicons-arrow-right-24: The Open-LIFU System](system.md)
+-   :material-code-tags:{ .lg .middle } __Software development__
 
-- :material-code-tags:{ .lg .middle } __Software development__
+    ---
 
-  ---
+    Five-layer stack: Desktop App ↔ Slicer Extension ↔ Python ↔ Hardware SDK
+    ↔ Firmware. Plus the Android companion app and transmit-module wiring.
 
-  Five-layer stack: Desktop App ↔ Slicer Extension ↔ Python ↔ Hardware SDK
-  ↔ Firmware. Plus the Android companion app and transmit-module wiring.
+    [:octicons-arrow-right-24: Software Development](software.md)
 
-  [:octicons-arrow-right-24: Software Development](software.md)
+-   :material-cube-outline:{ .lg .middle } __Hardware development__
 
-- :material-cube-outline:{ .lg .middle } __Hardware development__
+    ---
 
-  ---
+    CAD files, mechanical assemblies, and PCB designs released under
+    Creative Commons ShareAlike 4.0.
 
-  CAD files, mechanical assemblies, and PCB designs released under
-  Creative Commons ShareAlike 4.0.
+    [:octicons-arrow-right-24: Hardware Development](hardware.md)
 
-  [:octicons-arrow-right-24: Hardware Development](hardware.md)
+-   :material-monitor-dashboard:{ .lg .middle } __Slicer modules__
 
-- :material-monitor-dashboard:{ .lg .middle } __Slicer modules__
+    ---
 
-  ---
+    Advanced research workflow through 3D Slicer: data management, protocol
+    configuration, pre-planning, transducer localization, sonication
+    planning, and sonication.
 
-  Advanced research workflow through 3D Slicer: data management, protocol
-  configuration, pre-planning, transducer localization, sonication
-  planning, and sonication.
-
-  [:octicons-arrow-right-24: Slicer Open-LIFU](slicer.md)
+    [:octicons-arrow-right-24: Slicer Open-LIFU](slicer.md)
 
 </div>
 
@@ -74,17 +73,17 @@ The platform is available in two frequency variants (155 kHz and 400 kHz) and tw
 
 ## Key properties
 
-|                         |                                                              |
-| ----------------------- | ------------------------------------------------------------ |
-| **Modality**            | Low-intensity focused ultrasound (LIFU) for neuromodulation research |
-| **Frequency variants**  | 155 kHz, 400 kHz                                             |
-| **Configurations**      | 1× (single transmit module), 2× (dual transmit module)       |
-| **Elements per module** | 64 (8×8 matrix array)                                        |
-| **Console power**       | 120 W (±60 V) or 180 W (±65 V), depending on serial number   |
-| **Host platforms**      | Windows 11+, Linux (Python 3.10–3.12)                        |
-| **Companion app**       | Android 14+ (Pixel 5/7/9/10 officially supported)            |
-| **Software license**    | AGPL v3                                                      |
-| **Hardware license**    | CC BY-SA 4.0                                                 |
+| | |
+|---|---|
+| **Modality** | Low-intensity focused ultrasound (LIFU) for neuromodulation research |
+| **Frequency variants** | 155 kHz, 400 kHz |
+| **Configurations** | 1× (single transmit module), 2× (dual transmit module) |
+| **Elements per module** | 64 (8×8 matrix array) |
+| **Console power** | 120 W (±60 V) or 180 W (±65 V), depending on serial number |
+| **Host platforms** | Windows 11+, Linux (Python 3.10–3.12) |
+| **Companion app** | Android 14+ (Pixel 5/7/9/10 officially supported) |
+| **Software license** | AGPL v3 |
+| **Hardware license** | CC BY-SA 4.0 |
 
 ## Investigational device — research use only
 
@@ -95,24 +94,24 @@ The platform is available in two frequency variants (155 kHz and 400 kHz) and tw
     **Reconfiguring or modifying any transducer immediately voids the factory
     calibration**, requiring users to recharacterize the transducer to ensure
     it complies with all necessary application-specific requirements.
-    
+
     **The transducer is not watertight. Never submerge the transducer in
     water.** Doing so may lead to electric shock or damage.
-    
+
     By building, creating, or modifying this hardware or software, you assume
     all risks. Openwater disclaims all liability for any harm, injury, or
     damages incurred.
 
 ## How this documentation is organized
 
-| If you want to…                           | Go to                               |
-| ----------------------------------------- | ----------------------------------- |
-| Understand the system at a hardware level | [The Open-LIFU System](system.md)   |
-| Build, extend, or integrate with the SDK  | [Software Development](software.md) |
-| Get hardware files for fabrication        | [Hardware Development](hardware.md) |
-| Run the advanced Slicer workflow          | [Slicer Open-LIFU](slicer.md)       |
-| Submit a contribution                     | [Contributing](contributing.md)     |
-| Understand our development process        | [Best Practices](best-practices.md) |
+| If you want to… | Go to |
+|---|---|
+| Understand the system at a hardware level | [The Open-LIFU System](system.md) |
+| Build, extend, or integrate with the SDK | [Software Development](software.md) |
+| Get hardware files for fabrication | [Hardware Development](hardware.md) |
+| Run the advanced Slicer workflow | [Slicer Open-LIFU](slicer.md) |
+| Submit a contribution | [Contributing](contributing.md) |
+| Understand our development process | [Best Practices](best-practices.md) |
 
 ## Where to ask questions
 
