@@ -59,24 +59,6 @@ is also available for archival download.
 
   [:octicons-arrow-right-24: Slicer Open-LIFU](slicer.md)
 
-- :material-handshake:{ .lg .middle } __Contributing__
-
-  ---
-
-  Code of Conduct, fork-and-PR workflow, where to ask for help. The
-  on-ramp for new contributors.
-
-  [:octicons-arrow-right-24: Contributing](contributing.md)
-
-- :material-shield-check:{ .lg .middle } __Best practices__
-
-  ---
-
-  IEC 62304-aligned dev lifecycle, design philosophy, SemVer, V&V,
-  firmware/software guidelines, license terms.
-
-  [:octicons-arrow-right-24: Best Practices](best-practices.md)
-
 </div>
 
 ## What Open-LIFU is
