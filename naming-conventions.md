@@ -31,8 +31,8 @@ Every repository name follows this pattern:
 |     |     |     |
 | --- | --- | --- |
 | **Prefix** | **Use For** | **Example** |
-| openlifu- | OpenLIFU platform (focused ultrasound) | openlifu-python |
-| openmotion- | OpenMOTION platform (optical imaging) | openmotion-firmware |
+| openlifu- | Open-LIFU platform (focused ultrasound) | openlifu-python |
+| openmotion- | Open-Motion platform (optical imaging) | openmotion-firmware |
 | openwater- | Shared components, org-wide tools, research | openwater-sdk |
 
 # Core Rules
@@ -52,13 +52,13 @@ Follow this decision tree to determine the correct repository name:
 
 **Step 1: Identify the Platform**
 
-Is this for focused ultrasound (OpenLIFU)?
+Is this for focused ultrasound (Open-LIFU)?
 
 → YES: Use openlifu-
 
 → NO: Continue to next question
 
-Is this for optical imaging (OpenMOTION)?
+Is this for optical imaging (Open-Motion)?
 
 → YES: Use openmotion-
 
@@ -285,7 +285,7 @@ For reference, here is the target repository structure for the OpenwaterHealth o
 
 openwater-commons, openwater-protocol, openwater-governance
 
-**OpenLIFU Platform (14):**
+**Open-LIFU Platform (14):**
 
 Software: openlifu-python, openlifu-firmware, openlifu-api...
 
@@ -293,9 +293,9 @@ Hardware: openlifu-hardware-mechanical, -electrical, -bom
 
 Docs: openlifu-docs, openlifu-examples, openlifu-assembly-guides
 
-**OpenMOTION Platform (14):**
+**Open-Motion Platform (14):**
 
-\[Similar structure to OpenLIFU\]
+\[Similar structure to Open-LIFU\]
 
 **Shared Components (5):**
 
