@@ -164,8 +164,8 @@ Follow our quick start guide to run your first experiment:
 
 Check out example code in our repositories:
 
-- [OpenLIFU Examples](https://github.com/OpenwaterHealth/OpenLIFU-python/tree/main/examples)
-- [OpenMOTION Examples](https://github.com/OpenwaterHealth/OpenMOTION-Pylib/tree/main/examples)
+- [Open-LIFU Examples](https://github.com/OpenwaterHealth/OpenLIFU-python/tree/main/examples)
+- [Open-Motion Examples](https://github.com/OpenwaterHealth/OpenMOTION-Pylib/tree/main/examples)
 
 ---
 
@@ -187,7 +187,7 @@ Having issues? Check our troubleshooting guide:
 
 <div class="grid cards" markdown>
 
--   :material-brain: **OpenLIFU**
+-   :material-brain: **Open-LIFU**
 
     ---
 
@@ -195,7 +195,7 @@ Having issues? Check our troubleshooting guide:
 
     [OpenLIFU Docs →](../openlifu/index.md)
 
--   :material-heart-pulse: **OpenMOTION**
+-   :material-heart-pulse: **Open-Motion**
 
     ---
 
