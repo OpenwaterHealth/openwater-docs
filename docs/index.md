@@ -66,7 +66,7 @@ fabricating their own hardware revisions.
 
     [:octicons-arrow-right-24: Open-LIFU documentation](openlifu/index.md)
 
--   :material-pulse:{ .lg .middle } __Open-MOTION__
+-   :material-pulse:{ .lg .middle } __Open-Motion__
 
     ---
 
