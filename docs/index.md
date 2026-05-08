@@ -91,7 +91,7 @@ fabricating their own hardware revisions.
 
     [:octicons-arrow-right-24: github.com/OpenwaterHealth](https://github.com/OpenwaterHealth)
 
--   :fontawesome-brands-discord:{ .lg .middle } __Discord Community__
+-   :fontawesome-brands-discord:{ .lg .middle } __Discord__
 
     ---
 
