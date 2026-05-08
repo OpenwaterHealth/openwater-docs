@@ -123,7 +123,7 @@ fabricating their own hardware revisions.
 ## Investigational devices
 
 !!! warning "Research use only"
-    Open-LIFU and Open-MOTION are **investigational devices**. Neither is FDA-cleared.
+    Open-LIFU and Open-Motion are **investigational devices**. Neither is FDA-cleared.
     Both are intended solely for laboratory research and development. Clinical or
     diagnostic use is prohibited. Documentation here describes the systems as built;
     use at your own risk and consult your local regulatory authority before any
