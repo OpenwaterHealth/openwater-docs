@@ -127,6 +127,7 @@ nav:
       - Software Development: openlifu/software.md
       - Hardware Development: openlifu/hardware.md
       - Slicer Open-LIFU: openlifu/slicer.md
+      - Water Tank Testing: openlifu/water-tank-testing.md
       - Latest 3D Slicer LIFU Software: https://github.com/OpenwaterHealth/SlicerOpenLIFU/releases/latest
       - Latest Open-LIFU Test Application: https://github.com/OpenwaterHealth/openlifu-test-app/releases/latest
       
