@@ -129,9 +129,9 @@ nav:
       - Slicer Open-LIFU: openlifu/slicer.md
       - Water Tank Testing: openlifu/water-tank-testing.md
       - Latest 3D Slicer LIFU Software: https://github.com/OpenwaterHealth/SlicerOpenLIFU/releases/latest
-      - Latest Open-LIFU Test Application: https://github.com/OpenwaterHealth/openlifu-test-app/releases/latest
-      - Latest Open-LIFU Desktop Application: https://github.com/OpenwaterHealth/openlifu-desktop-application/releases/latest
-      - Latest Open-LIFU Toolbox: https://github.com/OpenwaterHealth/openlifu-python/releases/latest
+      - Latest Test Application: https://github.com/OpenwaterHealth/openlifu-test-app/releases/latest
+      - Latest Desktop Application: https://github.com/OpenwaterHealth/openlifu-desktop-application/releases/latest
+      - Latest Python Toolbox: https://github.com/OpenwaterHealth/openlifu-python/releases/latest
       
   - Open-Motion:
       - Overview: openmotion/index.md
