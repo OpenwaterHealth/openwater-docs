@@ -224,7 +224,7 @@ as intended, the **openlifu-test-app** is recommended.
 
 1. Navigate to where the files were extracted and double-click the executable.
     - Acknowledge the Microsoft Defender SmartScreen warning and select **Run anyway**.
-2. Refer to the *Controller User Guide — Pre-Release* to configure and run an arbitrary sonication.
+2. Refer to the [Controller Page Guide](https://github.com/OpenwaterHealth/openlifu-test-app/blob/main/docs/controller-page-user-guide.md) to configure and run an arbitrary sonication.
 
 ## Best practices
 
