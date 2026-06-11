@@ -5,7 +5,8 @@ description: Water tank procedures for acoustic verification of Open-LIFU transd
 
 # Water Tank Testing
 
-> **Document ID:** ER-00016 · **Revision:** A · **Change Order:** ECO-000249 · **Effective:** 2026-05-26 · **Approvers:** David Paribello, Peter Hollender, Muhammad Zubair, George Vigelette, Mark Watson, Ray Chiu, Madhumita Srikanth
+> **Document ID:** ER-00016 · **Revision:** A · **Change Order:** ECO-000249 · **Effective:** 2026-05-26 · **Approvers:** David Paribello, Peter Hollender, George Vigelette, Mark Watson, Ray Chiu, Madhumita Srikanth
+> ** Authors:** Muhammad Zubair, David Paribello, Mykhaylo Danikhno
 
 This page outlines water tank (Onda AIMS III Water Tank and Soniq 5.3+ software)
 testing procedures for **acoustic verification of Open-LIFU transducers** using the
