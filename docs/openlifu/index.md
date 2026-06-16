@@ -4,6 +4,23 @@
 > **Released:** 2026-05-07
 > **Authors:** David Paribello, Peter Hollender, George Vigelette, Dan Blizinski
 
+## Investigational device — research use only
+
+!!! danger "Read before you build"
+    The Open-LIFU platform is **not yet cleared by the FDA** and is intended
+    for research purposes only. Not for commercial sale.
+
+    **Reconfiguring or modifying any transducer immediately voids the factory
+    calibration**, requiring users to recharacterize the transducer to ensure
+    it complies with all necessary application-specific requirements.
+
+    **The transducer is not watertight. Never submerge the transducer in
+    water.** Doing so may lead to electric shock or damage.
+
+    By building, creating, or modifying this hardware or software, you assume
+    all risks. Openwater disclaims all liability for any harm, injury, or
+    damages incurred.
+
 Open-LIFU is an open-source platform for **low-intensity focused ultrasound**
 (LIFU) research. The system emits programmable sequences of steered, focused
 ultrasound pulses, controlled from a PC application and supported by an
@@ -84,23 +101,6 @@ The platform is available in two frequency variants (155 kHz and 400 kHz) and tw
 | **Companion app** | Android 14+ (Pixel 5/7/9/10 officially supported) |
 | **Software license** | AGPL v3 |
 | **Hardware license** | CC BY-SA 4.0 |
-
-## Investigational device — research use only
-
-!!! danger "Read before you build"
-    The Open-LIFU platform is **not yet cleared by the FDA** and is intended
-    for research purposes only. Not for commercial sale.
-
-    **Reconfiguring or modifying any transducer immediately voids the factory
-    calibration**, requiring users to recharacterize the transducer to ensure
-    it complies with all necessary application-specific requirements.
-
-    **The transducer is not watertight. Never submerge the transducer in
-    water.** Doing so may lead to electric shock or damage.
-
-    By building, creating, or modifying this hardware or software, you assume
-    all risks. Openwater disclaims all liability for any harm, injury, or
-    damages incurred.
 
 ## How this documentation is organized
 
