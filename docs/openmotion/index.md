@@ -3,6 +3,26 @@
 > **Document ID:** ER-00014 · **Revision:** A · **Released:** 2026-04-15
 > **Authors:** David Paribello, Ethan Head, George Vigelette, Dan Blizinski
 
+## Investigational device — research use only
+
+!!! danger "Read before you build"
+    The Open-Motion platform is **not yet cleared by the FDA** and is intended
+    for research purposes only. Not for commercial sale. This device and
+    documentation are intended strictly for laboratory research and development;
+    clinical or diagnostic use is prohibited.
+
+    **Class 3 laser hazard.** Disassembly may expose the user to hazardous
+    Class 3 laser radiation, capable of causing permanent eye injury. The
+    Console should never be opened.
+
+    A one-year limited warranty applies only to manufacturer's defects. Any
+    modification, disassembly, or installation of unauthorized software or
+    firmware that alters device performance immediately voids all warranties.
+    By building, creating, or modifying this hardware or software, you assume
+    all risks. Openwater disclaims all liability for any harm, injury, or
+    damages incurred, and the user agrees to indemnify Openwater against any
+    claims arising from such modifications.
+
 Open-Motion is a modular, open-source platform for laboratory research that uses
 low-intensity near-infrared light to measure blood flow, blood volume, and
 micro-motions deep within tissue. The system is configurable, portable, and
@@ -86,26 +106,6 @@ roadmap. The SDK and reference applications are written in Python.
 | **SDK** | Python 3.12+ |
 | **Hardware license** | CC BY-SA 4.0 |
 | **Software license** | AGPL (main branch) |
-
-## Investigational device — research use only
-
-!!! danger "Read before you build"
-    The Open-Motion platform is **not yet cleared by the FDA** and is intended
-    for research purposes only. Not for commercial sale. This device and
-    documentation are intended strictly for laboratory research and development;
-    clinical or diagnostic use is prohibited.
-
-    **Class 3 laser hazard.** Disassembly may expose the user to hazardous
-    Class 3 laser radiation, capable of causing permanent eye injury. The
-    Console should never be opened.
-
-    A one-year limited warranty applies only to manufacturer's defects. Any
-    modification, disassembly, or installation of unauthorized software or
-    firmware that alters device performance immediately voids all warranties.
-    By building, creating, or modifying this hardware or software, you assume
-    all risks. Openwater disclaims all liability for any harm, injury, or
-    damages incurred, and the user agrees to indemnify Openwater against any
-    claims arising from such modifications.
 
 ## How this documentation is organized
 
