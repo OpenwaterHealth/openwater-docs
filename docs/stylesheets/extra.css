@@ -519,3 +519,50 @@ body, .md-typeset {
 .md-footer-meta {
   background: #06283d;
 }
+
+/* ============================================================================
+   Navigation section dividers
+   ----------------------------------------------------------------------------
+   The Open-LIFU / Open-Motion nav mixes documentation pages with external
+   release links. Grouping them under level-2 sections (see mkdocs.yml nav)
+   gives bold headers; this adds a rule above each group so "Downloads" is
+   visually separated from the documentation above it.
+
+   Applies to every grouped section in both product tabs.
+   ========================================================================== */
+
+.md-nav--primary .md-nav__item--section:not(:first-child) {
+  margin-top: 0.9rem;
+  padding-top: 0.9rem;
+  border-top: 1px solid var(--md-default-fg-color--lightest);
+}
+
+/* Section labels: slightly stronger than page links so groups read as headers */
+.md-nav--primary .md-nav__item--section > .md-nav__link,
+.md-nav--primary .md-nav__item--section > label.md-nav__link {
+  color: var(--ow-deep-navy);
+  font-weight: 700;
+  font-size: 0.72rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  opacity: 0.85;
+}
+
+[data-md-color-scheme="slate"] .md-nav--primary .md-nav__item--section > .md-nav__link,
+[data-md-color-scheme="slate"] .md-nav--primary .md-nav__item--section > label.md-nav__link {
+  color: var(--ow-aqua-bright);
+}
+
+[data-md-color-scheme="slate"] .md-nav--primary .md-nav__item--section:not(:first-child) {
+  border-top-color: rgba(255, 255, 255, 0.12);
+}
+
+/* External (release / download) links get a subtle outbound affordance */
+.md-nav__link[href^="https://github.com"]::after,
+.md-nav__link[href^="https://download.slicer.org"]::after,
+.md-nav__link[href^="https://play.google.com"]::after {
+  content: "↗";
+  margin-left: 0.3em;
+  font-size: 0.85em;
+  opacity: 0.55;
+}
