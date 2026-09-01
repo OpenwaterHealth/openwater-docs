@@ -73,7 +73,7 @@ If you intend to fabricate Open-LIFU hardware:
     calibration and shifts all liability for safety, integrity, and
     performance to the modifier. Recharacterize against
     application-specific requirements before use. See the
-    [investigational-device disclaimer](index.md#investigational-device-research-use-only)
+    [research-use-only disclaimer](index.md#research-use-only)
     for full terms.
 
 !!! note "Custom transmit-module configurations"

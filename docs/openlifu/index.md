@@ -4,7 +4,7 @@
 > **Released:** 2026-05-07
 > **Authors:** David Paribello, Peter Hollender, George Vigelette, Dan Blizinski
 
-## Investigational device — research use only
+## Research use only
 
 !!! danger "Read before you build"
     The Open-LIFU platform is **not yet cleared by the FDA** and is intended
