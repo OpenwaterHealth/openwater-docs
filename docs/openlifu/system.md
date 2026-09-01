@@ -8,7 +8,7 @@ The Open-LIFU hardware platform consists of three primary components.
 | **Transducer** | Wearable headset-style housing containing one or more **Transmit Modules** (each a 64-element 2D matrix array), a deformable acoustic coupling pad, and unique geometric features for spatial tracking. |
 | **Supporting hardware** | Android mobile device (photogrammetric reconstruction), USB-C cable to PC, optional water-tank testing accessories. |
 
-!!! danger "Investigational device — do not modify without recharacterization"
+!!! danger "Do not modify without recharacterization"
     All Open-LIFU transducers and transmit modules are factory calibrated.
     **Reconfiguring or modifying any transducer immediately voids the factory
     calibration**, requiring users to recharacterize the transducer to
