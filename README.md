@@ -86,6 +86,44 @@ We welcome documentation contributions! See our [Contributing Guide](docs/commun
 6. Push to your fork (`git push origin docs/my-improvement`)
 7. Open a Pull Request
 
+### Controlled documents
+
+Many pages on this site summarize a **controlled document** — an ER- or LBL- numbered
+document released through ECO and assigned a revision in Arena. Those pages are a
+regulatory surface: readers treat their claims as the controlled document's claims.
+
+Two rules apply to them.
+
+**1. Quote regulatory statements. Do not paraphrase them.**
+
+Statements about standards, conformance, indications, contraindications, clearance
+status, and liability are reproduced in the source document's own words. Descriptive
+scaffolding — "what this section covers", navigation, orientation — may be written
+freely. The failure mode is not carelessness; it is ordinary summarizing, where a verb
+gets stronger or a requirement gets inverted because the shorter phrasing reads better.
+
+| Do not write | The source says |
+|---|---|
+| "IEC 60601 conformance" | "has been designed in accordance with" |
+| "investigational device" | "not yet cleared by the FDA and is intended for research purposes only" |
+| "Subjects who cannot remain still" | "Subjects must be able to remain still" |
+
+Each of those is a real correction made to this site. Conformance implies demonstrated,
+certified compliance; designed in accordance with is a statement of design intent. On a
+public page for an RUO device, that difference matters.
+
+Every Open-LIFU controlled document carries this line — use it verbatim when a page needs
+to state the platform's status:
+
+> The Open-LIFU platform is not yet cleared by the FDA and is intended for research
+> purposes only. Not for commercial sale.
+
+**2. Route the page past a listed author before merge.**
+
+Any new or substantially edited page summarizing a controlled document is reviewed by one
+of the authors named in that document. They are the only people positioned to catch a
+claim that reads plausibly but is not in the source.
+
 ### Documentation Guidelines
 
 - Use clear, simple language
