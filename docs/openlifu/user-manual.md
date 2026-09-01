@@ -11,7 +11,8 @@ description: The controlled operator manual for the Open-LIFU platform — safet
 ## Research use only
 
 !!! danger "Read before you operate"
-    Open-LIFU is a **Research Use Only** device. It is **not intended for the
+    The Open-LIFU platform is for research use only. **Not for use in
+    therapeutic procedures.** The System is **not intended to be used for the
     diagnosis or treatment of any disease or medical condition and is not
     cleared by the FDA for clinical use.**
 
@@ -41,13 +42,28 @@ this page summarizes and routes into it.
 
 ## Contraindications
 
-Open-LIFU must **not** be used where any of the following apply:
+The following conditions are contraindicated when using the Open-LIFU platform;
+users or individuals displaying these signs or symptoms should not use Open-LIFU:
 
 - Open cuts, sores, or wounds within the transducer contact area
 - Head dressings, bandages, or gauze on or around the scan site that may interfere with transducer coupling
-- Subjects who cannot remain still for the duration of a procedure
-- Prenatal and obstetric applications
-- Targets requiring a beam path that travels through the eyes
+- Subjects must be able to remain still for the duration of a procedure
+- Prenatal and Obstetric applications
+- Targets requiring a beam path that travels through eyes
+
+## Research use
+
+Use of Open-LIFU to perform pre-clinical and/or clinical research may be subject to
+various domestic and international laws and regulations. It is the responsibility of
+the customer to be aware of and comply with all applicable laws and regulations
+pertaining to their particular use.
+
+!!! warning "Provided as-is"
+    While Openwater has endeavored to design Open-LIFU with predictable performance
+    and documented safety features, **Open-LIFU is provided as-is without warranty.**
+    The safety and efficacy of Open-LIFU for any particular use is inherently subject
+    to the specific requirements and risks of that application, and assessment and
+    mitigation of such risks is the sole responsibility of the user.
 
 ## What's inside
 
@@ -55,7 +71,7 @@ Open-LIFU must **not** be used where any of the following apply:
 |---|---|---|
 | **Device Description & Indications** | What the system is, research-use boundaries, contraindications | 5 |
 | **Definitions** | Canonical vocabulary — Protocol, Session, Solution, Run, Photoscan, Virtual Fitting | 6 |
-| **Safety** | ISO 13485 / ISO 14971 / IEC 62304 / IEC 60601 / IEC 62366 conformance, warnings, precautions, electrical safety | 7 |
+| **Safety** | Quality standards the device was **designed in accordance with** (ISO 13485, ISO 14971, IEC 62304, IEC 60601, IEC 62366); general safety, warnings, precautions, electrical safety | 7 |
 | **System Specification** | Console, console specs, transducer configurations, coupling pad, software, sonication sequence specs | 15 |
 | **Creating & Editing Sonication Protocols** | Pulse, sequence, focal pattern, beamforming, segmentation, constraints, virtual fit | 21 |
 | **Software Operation** | Database selection, log in, protocol configuration | 37 |
