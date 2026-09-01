@@ -13,7 +13,8 @@ device operators. The sections below describe how to create and modify existing
 sonication protocols.
 
 !!! note "Supplement to the user manual"
-    This document is provided as a supplement to the user manual. All information
+    This document is provided as a supplement to the
+    [Open-LIFU User Manual](user-manual.md). All information
     herein — including product features, specifications, and descriptions — is
     subject to change without notice and should not be considered final. Openwater
     makes no guarantees, express or implied, regarding the completeness, accuracy,
