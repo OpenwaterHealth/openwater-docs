@@ -117,32 +117,76 @@ plugins:
 
 # -----------------------------------------------------------------------------
 # Navigation
+#
+# Structure note: the Open-LIFU section is grouped by AUDIENCE, not by document
+# type. Level-2 entries render as bold section headers (navigation.sections is
+# already enabled in theme.features); the divider rules above each group come
+# from stylesheets/extra.css.
+#
+# DOCUMENT CONTROL — read before adding a nav entry
+#   This repo is the canonical source for released customer documentation.
+#   A document may be added here only once it has cleared ECO release and been
+#   assigned an ER-/LBL- number and revision in Arena. Its PDF is committed to
+#   docs/<product>/ under a revision-stamped filename, e.g.
+#   ER-00015-RevA-OpenLIFU-Developer-Docs.pdf.
+#
+#   Do NOT link a Google Drive URL from this site. Drive holds Product
+#   Management drafts and proposals; a Drive URL pins no revision, so it cannot
+#   represent a controlled document.
+#
+#   Lines marked "AWAITING ECO" below are drafts or proposals that exist today
+#   only in Drive. Uncomment each when its ECO release lands and the numbered,
+#   revision-stamped PDF is committed alongside the page.
 # -----------------------------------------------------------------------------
 nav:
   - Open-LIFU:
       - Overview: openlifu/index.md
-      - Best Practices: openlifu/best-practices.md
-      - Contributing: openlifu/contributing.md
-      - The Open-LIFU System: openlifu/system.md
-      - Software Development: openlifu/software.md
-      - Hardware Development: openlifu/hardware.md
-      - Slicer Open-LIFU: openlifu/slicer.md
-      - Creating & Editing Sonication Protocols: openlifu/sonication-protocols.md
-      - Water Tank Testing: openlifu/water-tank-testing.md
-      - Latest 3D Slicer LIFU Software: https://github.com/OpenwaterHealth/SlicerOpenLIFU/releases/latest
-      - Latest Test Application: https://github.com/OpenwaterHealth/openlifu-test-app/releases/latest
-      - Latest Desktop Application: https://github.com/OpenwaterHealth/openlifu-desktop-application/releases/latest
-      - Latest Python Toolbox: https://github.com/OpenwaterHealth/openlifu-python/releases/latest
+
+      - Using Open-LIFU:
+          # - Quickstart Guide: openlifu/quickstart.md            # AWAITING ECO — draft LBL-00007 Rev 2
+          - User Manual: openlifu/user-manual.md
+          - Creating & Editing Sonication Protocols: openlifu/sonication-protocols.md
+          # - Onboarding: openlifu/onboarding.md                  # AWAITING ECO — draft, Product Management
+
+      - Photogrammetry:
+          # - Companion App: openlifu/photogrammetry-app.md       # AWAITING ECO — draft LBL-00017
+          # - Localization Accuracy Study: openlifu/localization-accuracy.md   # AWAITING ECO — draft white paper
+          - Android App on Google Play: https://play.google.com/store/apps/details?id=health.openwater.openlifu3dscanner
+
+      - Platform Development:
+          - The Open-LIFU System: openlifu/system.md
+          - Software Development: openlifu/software.md
+          - Hardware Development: openlifu/hardware.md
+          - Slicer Open-LIFU: openlifu/slicer.md
+          - Water Tank Testing: openlifu/water-tank-testing.md
+
+      - Contributing:
+          - Best Practices: openlifu/best-practices.md
+          - How to Contribute: openlifu/contributing.md
+
+      - Downloads:
+          - Latest Desktop Application: https://github.com/OpenwaterHealth/openlifu-desktop-application/releases/latest
+          - Latest 3D Slicer LIFU Software: https://github.com/OpenwaterHealth/SlicerOpenLIFU/releases/latest
+          - Latest Python Toolbox: https://github.com/OpenwaterHealth/openlifu-python/releases/latest
+          - Latest Test Application: https://github.com/OpenwaterHealth/openlifu-test-app/releases/latest
+          - 3D Slicer (required): https://download.slicer.org/
 
   - Open-Motion:
       - Overview: openmotion/index.md
-      - Best Practices: openmotion/best-practices.md
-      - Contributing: openmotion/contributing.md
-      - The Open-Motion System: openmotion/system.md
-      - Software Development: openmotion/software.md
-      - Hardware Development: openmotion/hardware.md
-      - External Connectivity: openmotion/connectivity.md
-      - Latest Software Release: https://github.com/OpenwaterHealth/openmotion-bloodflow-app/releases/latest
+
+      - Platform Development:
+          - The Open-Motion System: openmotion/system.md
+          - Software Development: openmotion/software.md
+          - Hardware Development: openmotion/hardware.md
+          - External Connectivity: openmotion/connectivity.md
+
+      - Contributing:
+          - Best Practices: openmotion/best-practices.md
+          - How to Contribute: openmotion/contributing.md
+
+      - Downloads:
+          - Latest Software Release: https://github.com/OpenwaterHealth/openmotion-bloodflow-app/releases/latest
+
   - Community: https://openwaterhealth.github.io/openwater-community/
 
 # -----------------------------------------------------------------------------
