@@ -1,11 +1,22 @@
-# Research Partnerships
+---
+title: Research & White Papers
+hide:
+  - toc
+  - footer
+---
 
-Academic collaborations and research programs.
+<div class="ow-research">
+<section class="research-hero" aria-labelledby="page-title"><h1 id="page-title">Research &amp; White Papers</h1><p>Studies, technical reports, and scientific publications<br>for the Open-LIFU and Open-Motion platforms.</p></section><div class="research-layout"><aside class="research-nav" aria-label="Research navigation"><h2>RESEARCH</h2><div><a class="selected" href="/research/">Research library</a><a href="/research/#about-library">About this library</a></div><div class="nav-section"><h2>RELATED DOCUMENTATION</h2><a href="https://docs.openwater.health/openlifu/">Open-LIFU</a><a href="https://docs.openwater.health/openmotion/">Open-Motion</a></div><div class="nav-section"><h2>Get involved</h2><a href="https://openwaterhealth.github.io/openwater-community/#research-lane">Research community</a></div></aside><div class="library"><section aria-labelledby="library-title"><h2 id="library-title">Research library</h2><p class="intro">Explore the methods and evidence behind Openwater technology. Each document brings its study context, authors, and publication status together in one place.</p>
 
-## Current Partners
+<div class="filter-row"><div class="filter"><label for="research-search">Search research</label><input id="research-search" type="search" placeholder="Title, topic, or author"></div><div class="filter"><label for="platform">Platform</label><select id="platform"><option value="all">All platforms</option><option value="openlifu">Open-LIFU</option><option value="openmotion">Open-Motion</option></select></div><div class="filter"><label for="document-type">Document type</label><select id="document-type"><option value="all">All document types</option><option value="technical-report">Technical report</option><option value="white-paper">White paper</option><option value="publication">Scientific publication</option></select></div><button class="reset" data-reset>Reset filters</button></div>
 
-- Mayo Clinic
-- Stanford University
-- Johns Hopkins University
+<p class="results-count" id="result-count" role="status" aria-live="polite">1 study preview · Awaiting release</p>
 
-[Publications](publications.md) | [Partnerships](partnerships.md)
+<div class="study-card" id="study-record" data-research-record="" data-platform="openlifu" data-type="technical-report" data-topics="photogrammetry MRI registration"><div class="study-card-main"><div><div class="tags"><span class="tag">Open-LIFU</span><span class="tag">Technical report</span><span class="tag draft">Awaiting release</span></div><h3><a href="/research/openlifu/transducer-localization-accuracy/">Open-LIFU Transducer Localization Accuracy Study</a></h3><p>Evaluation of phone-based photogrammetry for registering an Open-LIFU 2X transducer housing to MRI, using a mannequin with a known housing position.</p><p class="authors">Seemal Tahir, Peter Hollender, David Paribello, Soren Konecky</p></div><div class="paper-icon" aria-hidden="true"><svg viewbox="0 0 68 90" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 3h32l16 16v67H10z" fill="white"></path><path d="M42 3v17h16M20 32h27M20 39h27M20 46h18"></path><path d="M20 70v-9m9 9V56m9 14V52m9 18V60" stroke-width="4"></path><path d="M18 76h32"></path></svg></div></div><div class="study-card-bottom"><a href="/research/openlifu/transducer-localization-accuracy/">View study overview <span aria-hidden="true">→</span></a><a href="https://zenodo.org/records/22311271">View Zenodo record</a></div></div>
+
+<div class="empty-state" id="empty-state" hidden><h3>No matching documents</h3><p>Try another search or reset the filters to view the study preview.</p><button class="reset" data-reset>Reset filters</button></div></section>
+
+<section class="about-library" id="about-library"><h2>About this library</h2><p>This library brings together white papers, technical reports, and scientific publications. Document pages identify the methods, scope, and version so you can understand what each study covers.</p><p>Release status and scientific peer review are identified separately. Released reports will include a versioned PDF and citation; external publications will link to their publisher or DOI.</p></section>
+
+<section class="contribute"><div><h3>Contribute to Openwater research</h3><p>Share expertise, improve methods, or help build the literature library.</p></div><a href="https://openwaterhealth.github.io/openwater-community/#research-lane">Join the research community <span aria-hidden="true">→</span></a></section></div></div>
+</div>

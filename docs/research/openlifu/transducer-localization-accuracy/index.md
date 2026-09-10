@@ -1,0 +1,15 @@
+---
+title: Open-LIFU Transducer Localization Accuracy Study
+platform: openlifu
+document_type: technical-report
+source_record: https://zenodo.org/records/22311271
+overview_status: working-draft
+release_revision: null
+hide:
+  - toc
+  - footer
+---
+
+<div class="ow-research">
+<div class="research-layout"><aside class="research-nav" aria-label="Research navigation"><h2>RESEARCH</h2><div><a class="selected" href="/research/">Research library</a><a href="/research/#about-library">About this library</a></div><div class="nav-section"><h2>RELATED DOCUMENTATION</h2><a href="https://docs.openwater.health/openlifu/">Open-LIFU</a><a href="https://docs.openwater.health/openmotion/">Open-Motion</a></div><div class="nav-section"><h2>Get involved</h2><a href="https://openwaterhealth.github.io/openwater-community/#research-lane">Research community</a></div></aside><div class="library"><div class="study-detail"><a class="back" href="/research/">← Research library</a><div class="tags"><span class="tag">Open-LIFU</span><span class="tag">Technical report</span><span class="tag draft">Awaiting release</span></div><h1>Open-LIFU Transducer Localization Accuracy Study</h1><p class="byline">Seemal Tahir, Peter Hollender, David Paribello, Soren Konecky<br>Openwater</p><div class="notice">The overview below is based on the working draft. See the Zenodo record for the study document and version details.</div><dl class="metadata"><div><dt>Platform</dt><dd>Open-LIFU 2X</dd></div><div><dt>Study setting</dt><dd>Mannequin-based bench evaluation</dd></div><div><dt>Topics</dt><dd>Photogrammetry, localization, MRI registration</dd></div><div><dt>Peer-review status</dt><dd>Not established in the supplied draft</dd></div></dl><section><h2>Study document</h2><div class="related-links"><a href="https://zenodo.org/records/22311271">View study on Zenodo</a></div></section><section><h2>Study overview</h2><p>This report evaluates photogrammetric reconstruction as a way to locate an Open-LIFU transducer housing relative to MRI anatomy. A mannequin with a known housing position provides a reference for comparing the reconstructed position.</p><p>The workflow combines phone image capture, surface reconstruction, and alignment of the resulting mesh with MRI and a model of the transducer housing. The draft compares online and offline reconstruction workflows.</p></section><section><h2>Scope of the evidence</h2><p>The experiment evaluates localization on a mannequin under the tested capture and registration conditions. It does not establish human targeting accuracy. Numerical findings will be summarized after the authors reconcile the sample counts and error descriptions in the working draft.</p></section><section><h2>Related documentation</h2><div class="related-links"><a href="https://docs.openwater.health/openlifu/">Open-LIFU overview</a><a href="https://docs.openwater.health/openlifu/slicer/">Slicer Open-LIFU</a><a href="https://docs.openwater.health/openlifu/software/">Software development</a></div></section></div></div></div>
+</div>
