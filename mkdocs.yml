@@ -69,8 +69,10 @@ theme:
 
 extra_css:
   - stylesheets/extra.css
+  - stylesheets/research.css
 extra_javascript:
   - javascripts/extra.js
+  - javascripts/research.js
 
 # -----------------------------------------------------------------------------
 # Markdown extensions
@@ -186,6 +188,10 @@ nav:
 
       - Downloads:
           - Latest Software Release: https://github.com/OpenwaterHealth/openmotion-bloodflow-app/releases/latest
+
+  - Research:
+      - Research library: research/index.md
+      - Study overview: research/openlifu/transducer-localization-accuracy/index.md
 
   - Community: https://openwaterhealth.github.io/openwater-community/
 
