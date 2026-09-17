@@ -125,12 +125,17 @@ plugins:
 # already enabled in theme.features); the divider rules above each group come
 # from stylesheets/extra.css.
 #
-# DOCUMENT CONTROL — read before adding a nav entry
+# DOCUMENT CONTROL — read before adding product-documentation nav entries
 #   This repo is the canonical source for released customer documentation.
-#   A document may be added here only once it has cleared ECO release and been
-#   assigned an ER-/LBL- number and revision in Arena. Its PDF is committed to
-#   docs/<product>/ under a revision-stamped filename, e.g.
-#   ER-00015-RevA-OpenLIFU-Developer-Docs.pdf.
+#   Controlled Open-LIFU/Open-Motion product documents may be added only once
+#   they have cleared ECO release and been assigned an ER-/LBL- number and
+#   revision in Arena. Their PDFs are committed under docs/<product>/ with
+#   revision-stamped filenames.
+#
+#   Research & Validation is a separate knowledge layer. It may contain
+#   evaluation guides, study overviews, methods resources, and external
+#   publication records that are explicitly identified as research/evidence
+#   resources rather than controlled product documentation.
 #
 #   Do NOT link a Google Drive URL from this site. Drive holds Product
 #   Management drafts and proposals; a Drive URL pins no revision, so it cannot
@@ -191,7 +196,11 @@ nav:
 
   - Research:
       - Research library: research/index.md
-      - Study overview: research/openlifu/transducer-localization-accuracy/index.md
+      - Platform Evaluation Guides:
+          - Overview: research/platform-evaluation/index.md
+          - Evaluating tFUS Platforms: research/platform-evaluation/transcranial-focused-ultrasound.md
+      - Validation Studies:
+          - Open-LIFU Localization Accuracy: research/openlifu/transducer-localization-accuracy/index.md
 
   - Community: https://openwaterhealth.github.io/openwater-community/
 

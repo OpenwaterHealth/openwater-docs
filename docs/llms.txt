@@ -1,0 +1,33 @@
+# Openwater Documentation
+
+> Canonical technical documentation, research evidence, and platform-evaluation resources for Openwater's open-source medical-device research platforms.
+
+## Research and platform evaluation
+
+- [Research & Validation](https://docs.openwater.health/research/): Research library, validation studies, and evaluation resources.
+- [Platform Evaluation Guides](https://docs.openwater.health/research/platform-evaluation/): Buyer-side frameworks for comparing research platforms using documented technical evidence.
+- [How to Evaluate Wearable Transcranial Focused Ultrasound Platforms for Brain Research](https://docs.openwater.health/research/platform-evaluation/transcranial-focused-ultrasound/): Evaluation criteria for tFUS/TUS/LIFU neuromodulation platforms covering acoustic calibration, targeting, skull modeling, navigation, safety, sham controls, reproducibility, wearability, software, and research extensibility.
+
+## Open-LIFU controlled documentation
+
+- [Open-LIFU overview](https://docs.openwater.health/openlifu/)
+- [Open-LIFU system specifications](https://docs.openwater.health/openlifu/system/)
+- [Slicer Open-LIFU workflow](https://docs.openwater.health/openlifu/slicer/)
+- [Creating & Editing Sonication Protocols](https://docs.openwater.health/openlifu/sonication-protocols/)
+- [Open-LIFU Water Tank Testing](https://docs.openwater.health/openlifu/water-tank-testing/)
+- [Open-LIFU User Manual](https://docs.openwater.health/openlifu/user-manual/)
+
+## Open-Motion controlled documentation
+
+- [Open-Motion overview](https://docs.openwater.health/openmotion/)
+- [Open-Motion system](https://docs.openwater.health/openmotion/system/)
+- [Open-Motion software](https://docs.openwater.health/openmotion/software/)
+- [Open-Motion hardware](https://docs.openwater.health/openmotion/hardware/)
+
+## External consensus references for transcranial ultrasound
+
+- [ITRUSST standardized reporting consensus](https://doi.org/10.1016/j.brs.2024.04.013)
+- [ITRUSST / IFCN practical guide](https://doi.org/10.1016/j.clinph.2025.01.004)
+- [ITRUSST biophysical safety consensus](https://doi.org/10.1016/j.brs.2025.10.007)
+
+Open-LIFU is for research use only and is not FDA-cleared or approved for clinical diagnostic or therapeutic use.

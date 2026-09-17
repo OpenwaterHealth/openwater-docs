@@ -19,7 +19,7 @@ function initializeResearchLibrary() {
     });
     root.querySelector('#empty-state').hidden = count > 0;
     root.querySelector('#result-count').textContent = count
-      ? `${count} study ${count === 1 ? 'preview' : 'previews'} · Awaiting release`
+      ? `${count} ${count === 1 ? 'resource' : 'resources'}`
       : 'No matching documents';
   }
   search.addEventListener('input', filterLibrary);
