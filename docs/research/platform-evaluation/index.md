@@ -21,6 +21,14 @@ The guides use published consensus recommendations, technical literature, and pu
 
     [:octicons-arrow-right-24: Evaluate tFUS platforms](transcranial-focused-ultrasound.md)
 
+-   :material-heart-pulse:{ .lg .middle } __Optical blood-flow monitoring platforms__
+
+    ---
+
+    A buyer-side framework for evaluating wearable optical cerebral-hemodynamics platforms, including SCOS and DCS systems: metric definition, brain specificity, detector calibration, SNR, motion, safety, synchronization, reproducibility, and validation.
+
+    [:octicons-arrow-right-24: Evaluate optical blood-flow platforms](optical-blood-flow-monitoring.md)
+
 </div>
 
 ## How these guides relate to product documentation
