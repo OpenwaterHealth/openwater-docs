@@ -199,6 +199,7 @@ nav:
       - Platform Evaluation Guides:
           - Overview: research/platform-evaluation/index.md
           - Evaluating tFUS Platforms: research/platform-evaluation/transcranial-focused-ultrasound.md
+          - Evaluating Optical Blood-Flow Platforms: research/platform-evaluation/optical-blood-flow-monitoring.md
       - Validation Studies:
           - Open-LIFU Localization Accuracy: research/openlifu/transducer-localization-accuracy/index.md
 
