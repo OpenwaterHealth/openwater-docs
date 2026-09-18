@@ -37,4 +37,6 @@ The evaluation guide defines the **selection criteria**. Controlled product docu
 
 For Open-LIFU, see the [Open-LIFU documentation](../../openlifu/index.md), including [system specifications](../../openlifu/system.md), [Slicer planning and localization](../../openlifu/slicer.md), [sonication protocols](../../openlifu/sonication-protocols.md), and [water-tank testing](../../openlifu/water-tank-testing.md).
 
-Additional platform-evaluation guides can be added here as evidence frameworks are developed for Open-Motion and future Openwater platforms.
+For Open-Motion, see the [Open-Motion documentation](../../openmotion/index.md), including [system specifications](../../openmotion/system.md), [software and processing architecture](../../openmotion/software.md), [hardware development](../../openmotion/hardware.md), and [external device connectivity](../../openmotion/connectivity.md).
+
+Additional platform-evaluation guides can be added here as evidence frameworks are developed for future Openwater platforms.
