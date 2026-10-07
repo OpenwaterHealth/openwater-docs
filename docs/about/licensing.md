@@ -1,24 +1,14 @@
 # Licensing
 
-## Apache License 2.0
+Openwater uses four license layers. The license in each repository's LICENSE file governs the published version of that repository. Third-party components retain their own terms and notices.
 
-All Openwater software is licensed under **Apache License 2.0**.
+| Layer | License | Examples |
+| --- | --- | --- |
+| Reciprocal software core | AGPL-3.0-or-later | OpenLIFU console and transmitter firmware; OpenMOTION FPGA/HDL; sensing, beamforming, reconstruction and calibration core |
+| Permissive software and integration | Apache-2.0 | OpenMOTION console and sensor firmware; all bootloaders; applications, tools, 3D Slicer extensions, SDKs and language bindings |
+| Hardware reference designs | CERN-OHL-S-2.0 | CAD, schematics, PCB layouts and related design sources |
+| Documentation and data | CC-BY-4.0 | Guides, tutorials, templates and sample data |
 
-### Why Apache 2.0?
+Some SlicerOpenLIFU and hardware repositories still publish AGPL license files. Their approved destination is shown above, but the new license takes effect only after contributor rights are confirmed and the repository LICENSE and declarations are updated.
 
-- **Permissive:** Commercial use allowed
-- **Patent protection:** Explicit patent grant
-- **Clinical translation:** Enables FDA approval
-- **Community standard:** Used by 3D Slicer and medical imaging ecosystem
-
-## License Transition
-
-We transitioned from AGPL 3.0 to Apache 2.0 in 2025 to remove barriers for clinical adoption.
-
-[:octicons-arrow-right-24: Read About Transition](license-transition.md)
-
-## Hardware Licenses
-
-Hardware designs released under permissive open-source licenses (CC-BY-SA or Apache 2.0).
-
-[:octicons-arrow-right-24: Hardware Documentation](../hardware/index.md)
+For contributions and SPDX headers, see the [Openwater contribution policy](https://github.com/OpenwaterHealth/.github/blob/main/CONTRIBUTING.md). For the current license of a particular repository, read its LICENSE file.
