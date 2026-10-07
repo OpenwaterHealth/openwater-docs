@@ -14,9 +14,8 @@ Each layer is modular and open-source, allowing for extensibility and
 integration.
 
 !!! info "Licensing"
-    All software developed on Openwater's `main` branch is licensed under the
-    **AGPL**. Hardware designs are released under
-    [Creative Commons ShareAlike 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+    OpenMOTION console and sensor firmware, bootloaders, applications and SDKs are in the Apache-2.0 layer. FPGA/HDL core is AGPL-3.0-or-later. CERN-OHL-S-2.0 is the approved hardware reference-design target, subject to rights-reviewed repository relicensing. Check each repository's current LICENSE. See the [licensing overview](../about/licensing.md).
+
 
 For the latest released version of the Open-Motion application, see the
 [`openmotion-bloodflow-app`](https://github.com/OpenwaterHealth/openmotion-bloodflow-app)

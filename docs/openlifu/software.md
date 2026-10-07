@@ -17,11 +17,8 @@ integration. The middle three layers can each be accessed directly through
 compatible programs for testing and development.
 
 !!! info "Licensing"
-    All Open-LIFU software is licensed under the **AGPL v3**. Hardware
-    designs are released under
-    [Creative Commons ShareAlike 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
-    See [Best Practices → License](best-practices.md#license) for the full
-    obligations.
+    Open-LIFU uses AGPL-3.0-or-later for the reciprocal firmware and scientific core, Apache-2.0 for applications, SDKs and tools, and CERN-OHL-S-2.0 as the approved hardware reference-design target. Check each repository's current LICENSE; some hardware repositories still carry AGPL pending rights-reviewed relicensing. See the [licensing overview](../about/licensing.md).
+
 
 ## Software architecture
 

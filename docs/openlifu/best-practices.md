@@ -143,39 +143,7 @@ Additional best practices:
 
 ## License
 
-All Open-LIFU source code is released under the
-[GNU Affero General Public License v3.0](https://www.gnu.org/licenses/agpl-3.0.html)
-(AGPLv3). Developers working with or building on Open-LIFU should understand
-the key obligations this license imposes.
+Open-LIFU uses several licenses by component. The reciprocal firmware and scientific core is assigned AGPL-3.0-or-later; applications, SDKs, tools and integrations are assigned Apache-2.0; hardware reference designs have an approved CERN-OHL-S-2.0 destination; and documentation and sample data use CC-BY-4.0. Some repositories still carry earlier license files while rights-reviewed relicensing is in progress.
 
-!!! warning "AGPLv3 obligations"
-    **Copyleft applies to network use.** Unlike the standard GPL, AGPLv3
-    extends the copyleft requirement to software used over a network. If
-    you modify Open-LIFU and provide access to it as a service (for example,
-    via an API or web interface), you must also make your modified source
-    code publicly available.
+Read the current LICENSE and file-level notices in the specific repository before reusing a component. See the [licensing overview](../about/licensing.md) and the [organization contribution policy](https://github.com/OpenwaterHealth/.github/blob/main/CONTRIBUTING.md).
 
-    **Derivative works must remain AGPLv3.** Any modifications, extensions,
-    or software that links against Open-LIFU code and is distributed or
-    deployed must itself be released under AGPLv3. You cannot relicense the
-    code or incorporate it into a proprietary product.
-
-    **Source code must be made available.** When distributing AGPLv3-licensed
-    software (in binary or source form), you must include or offer access to
-    the complete corresponding source code, including any modifications you
-    have made.
-
-    **License and copyright notices must be preserved.** All copies of the
-    software must retain the original copyright notices, license text, and
-    any notices that refer to the absence of warranty.
-
-The full license text is available in the `LICENSE` file in each repository
-and at [https://www.gnu.org/licenses/agpl-3.0.html](https://www.gnu.org/licenses/agpl-3.0.html).
-Developers with questions about compliance or licensing exceptions should
-contact Openwater before integrating Open-LIFU into their own systems.
-
-All Open-LIFU **hardware designs** are released under the
-[Creative Commons Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/)
-(CC BY-SA 4.0) license. This allows anyone to share and adapt the designs for
-any purpose, including commercially, as long as appropriate credit is given
-and any derivative works are distributed under the same license.
