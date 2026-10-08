@@ -1,5 +1,9 @@
 # Openwater Documentation
 
+## Disclaimer
+
+CAUTION - Investigational device. Limited by Federal (or United States) law to investigational use. The system described here has not been evaluated by the FDA and is not designed for the treatment or diagnosis of any disease. It is provided AS-IS, with no warranties. User assumes all liability and responsibility for identifying and mitigating risks associated with using this software.
+
 [![Deploy Documentation](https://github.com/OpenwaterHealth/openwater-docs/actions/workflows/deploy-docs.yml/badge.svg)](https://github.com/OpenwaterHealth/openwater-docs/actions/workflows/deploy.yml)
 [![License](https://img.shields.io/badge/License-AGPL--3.0-blue.svg)](LICENSE)
 
