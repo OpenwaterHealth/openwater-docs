@@ -217,7 +217,7 @@ Pixel** phones — tested on the Pixel 5, 7, 9, and 10. Other phones meeting
 the minimum specifications (e.g., Samsung Galaxy A16, Motorola moto g)
 should also work, but full compatibility cannot be guaranteed. For help
 with non-supported phones, visit the
-[Discord](https://discord.gg/fS7vfAX4fA).
+[#photogrammetry channel](https://discord.com/channels/1187061250379751475/1560338619850428476) on our Discord. Not a member yet? [Join the Openwater Discord](https://discord.gg/fS7vfAX4fA) first.
 
 **Minimum phone specifications:**
 
