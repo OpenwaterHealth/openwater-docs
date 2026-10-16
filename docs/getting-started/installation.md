@@ -461,7 +461,7 @@ pip install --trusted-host pypi.org --trusted-host files.pythonhosted.org openli
 **Issue:** Long path errors
 
 **Solution:**
-- Enable long paths in Windows 10/11
+- Enable long paths in Windows 11
 - Or install in shorter path (e.g., `C:\openwater\`)
 
 #### macOS
