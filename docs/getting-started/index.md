@@ -9,7 +9,7 @@ Welcome! This guide will help you install and configure Openwater platforms.
 ### System Requirements
 
 **Minimum Requirements:**
-- **OS:** Windows 10/11, macOS 10.15+, or Ubuntu 20.04+
+- **OS:** Windows 11, macOS 10.15+, or Ubuntu 20.04+
 - **RAM:** 8 GB (16 GB recommended)
 - **Storage:** 10 GB free space
 - **Python:** 3.9 or higher
