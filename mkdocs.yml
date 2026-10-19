@@ -175,6 +175,7 @@ nav:
           - Latest Desktop Application: https://github.com/OpenwaterHealth/openlifu-desktop-application/releases/latest
           - Latest 3D Slicer LIFU Software: https://github.com/OpenwaterHealth/SlicerOpenLIFU/releases/latest
           - Latest Python Toolbox: https://github.com/OpenwaterHealth/openlifu-python/releases/latest
+          - Sample Database: https://github.com/OpenwaterHealth/openlifu-sample-database
           - Latest Test Application: https://github.com/OpenwaterHealth/openlifu-test-app/releases/latest
           - 3D Slicer (required): https://download.slicer.org/
 
