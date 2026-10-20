@@ -148,9 +148,10 @@ plugins:
 nav:
   - Open-LIFU:
       - Overview: openlifu/index.md
+      - Quick Start Guide: openlifu/developer-quickstart.md
 
       - Using Open-LIFU:
-          # - Quickstart Guide: openlifu/quickstart.md            # AWAITING ECO — draft LBL-00007 Rev 2
+          # - Quickstart Guide: openlifu/quickstart.md            # AWAITING ECO — draft LBL-00007 Rev 2 (controlled doc; distinct from developer-quickstart.md)
           - User Manual: openlifu/user-manual.md
           - Creating & Editing Sonication Protocols: openlifu/sonication-protocols.md
           # - Onboarding: openlifu/onboarding.md                  # AWAITING ECO — draft, Product Management
@@ -181,6 +182,7 @@ nav:
 
   - Open-Motion:
       - Overview: openmotion/index.md
+      - Quick Start Guide: openmotion/developer-quickstart.md
 
       - Platform Development:
           - The Open-Motion System: openmotion/system.md

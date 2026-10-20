@@ -106,6 +106,7 @@ The platform is available in two frequency variants (155 kHz and 400 kHz) and tw
 
 | If you want to… | Go to |
 |---|---|
+| Get set up and run your first sonication | [Quick Start Guide](developer-quickstart.md) |
 | Understand the system at a hardware level | [The Open-LIFU System](system.md) |
 | Build, extend, or integrate with the SDK | [Software Development](software.md) |
 | Get hardware files for fabrication | [Hardware Development](hardware.md) |
