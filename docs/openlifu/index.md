@@ -99,8 +99,8 @@ The platform is available in two frequency variants (155 kHz and 400 kHz) and tw
 | **Console power** | 120 W (±60 V) or 180 W (±65 V), depending on serial number |
 | **Host platforms** | Windows 11+, Linux (Python 3.10–3.12) |
 | **Companion app** | Android 14+ (Pixel 5/7/9/10 officially supported) |
-| **Software license** | AGPL v3 |
-| **Hardware license** | CC BY-SA 4.0 |
+| **Software license** | AGPL-3.0-or-later core; Apache-2.0 integrations (check repository LICENSE) |
+| **Hardware license** | CERN-OHL-S-2.0 approved target (check current repository LICENSE) |
 
 ## How this documentation is organized
 

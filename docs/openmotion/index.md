@@ -104,8 +104,8 @@ roadmap. The SDK and reference applications are written in Python.
 | **Image processing** | On-module histogramming (1024-bin), then USB to host |
 | **Host platforms** | Windows 11+ (current); macOS 12+, Linux (roadmap) |
 | **SDK** | Python 3.12+ |
-| **Hardware license** | CC BY-SA 4.0 |
-| **Software license** | AGPL (main branch) |
+| **Hardware license** | CERN-OHL-S-2.0 approved target (check current repository LICENSE) |
+| **Software license** | Apache-2.0 firmware/integrations; AGPL-3.0-or-later FPGA core (check repository LICENSE) |
 
 ## How this documentation is organized
 
