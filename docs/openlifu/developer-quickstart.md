@@ -373,6 +373,5 @@ within 48 hours. Using Open-Motion instead? See the
 
 ---
 
-*Open-LIFU is a research-use-only platform, not yet cleared by the FDA and not
-for commercial sale. See the [Overview](index.md#research-use-only) for the full
-statement.*
+!!! warning ""
+    **CAUTION** - The system described here has not been evaluated by the FDA and is not designed for the treatment or diagnosis of any disease. It is provided AS-IS, with no warranties. User assumes all liability and responsibility for identifying and mitigating risks associated with using this software.
