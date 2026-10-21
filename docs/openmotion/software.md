@@ -157,5 +157,5 @@ A consolidated view of all Open-Motion software repositories:
 | Firmware (FPGA)  | [`motion-seed-fpga`](https://github.com/OpenwaterHealth/motion-seed-fpga) | Laser seed control        |
 | Firmware (FPGA)  | [`motion-ta-fpga`](https://github.com/OpenwaterHealth/motion-ta-fpga) | Timing/aggregator FPGA    |
 | Host SDK         | [`openmotion-sdk`](https://github.com/OpenwaterHealth/openmotion-sdk) | Python SDK                |
-| Host application | [`openmotion-bloodflow-app`](https://github.com/OpenwaterHealth/openmotion-bloodflow-app) | Reference blood-flow GUI  |
+| Host application | [`openmotion-bloodflow-app`](https://github.com/OpenwaterHealth/openmotion-bloodflow-app) | Open-Motion Desktop App   |
 | Test/QA          | [`openmotion-test-app`](https://github.com/OpenwaterHealth/openmotion-test-app) | Test engineering tool     |

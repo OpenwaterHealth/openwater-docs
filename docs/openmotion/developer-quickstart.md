@@ -31,10 +31,10 @@ device user manual link here.
 
     ---
 
-    Install the USB driver and BloodFlow app on Windows 11. Best for
-    researchers running scans, or Python contributors using `OpenMOTION-Pylib`.
+    Install the USB driver and Open-Motion Desktop App on Windows 11. Best for
+    researchers running scans, or Python contributors using `openmotion-sdk`.
 
-    [:octicons-arrow-right-24: Start with the App](#path-a-run-the-bloodflow-app)
+    [:octicons-arrow-right-24: Start with the Desktop App](#path-a-run-the-open-motion-desktop-app)
 
 -   :material-chip:{ .lg .middle } __Path B · Build the firmware__
 
@@ -47,7 +47,7 @@ device user manual link here.
 
 </div>
 
-## Path A · Run the BloodFlow App
+## Path A · Run the Open-Motion Desktop App
 
 Driver, app, first scan, visualize.
 
@@ -59,10 +59,10 @@ Driver, app, first scan, visualize.
     PC still runs it, plan an upgrade to Windows 11.
     [Read the announcement](https://github.com/orgs/OpenwaterHealth/discussions/331).
 
-There are two pieces: the **USB driver** and the **BloodFlow application**. Both
+There are two pieces: the **USB driver** and the **Open-Motion Desktop App**. Both
 ship on your flash drive, or you can get them from GitHub:
 
-[:octicons-arrow-right-24: openmotion-bloodflow-app releases](https://github.com/OpenwaterHealth/openmotion-bloodflow-app/releases/latest){ .md-button }
+[:octicons-arrow-right-24: Open-Motion Desktop App releases](https://github.com/OpenwaterHealth/openmotion-bloodflow-app/releases/latest){ .md-button }
 
 !!! warning "Don't run from the flash drive"
     Copy both zips to your local computer first, then unzip.
@@ -96,13 +96,14 @@ ship on your flash drive, or you can get them from GitHub:
 2. Pick the scan from the dropdown.
 3. Click **Visualize BFI/BVI** or **Visualize Contrast/Mean**.
 
-### 6. (Optional) Python: OpenMOTION-Pylib
+### 6. (Optional) Python: openmotion-sdk
 
-Prefer scripting? Use the Python library directly.
+Prefer scripting? Use the `openmotion-sdk` Python SDK directly (Python 3.12+).
+API documentation lives in `openmotion-sdk/docs/`.
 
 ```bash
-git clone https://github.com/OpenwaterHealth/OpenMOTION-Pylib.git
-cd OpenMOTION-Pylib
+git clone https://github.com/OpenwaterHealth/openmotion-sdk.git
+cd openmotion-sdk
 python -m venv .venv
 # macOS/Linux: source .venv/bin/activate
 # Windows:     .venv\Scripts\activate
