@@ -170,10 +170,6 @@ BFI = 10 × (1 − (C(t) − C_min) / (C_max − C_min))
 BVI = 10 × (1 − (I(t) − I_min) / (I_max − I_min))
 ```
 
-!!! warning "Sanity check"
-    If BVI is greater than 0.9, suspect poor sensor contact before you
-    interpret the trace.
-
 ## Make your first contribution
 
 Fork, branch, commit, PR, CLA, merge. Reviews happen within 48 hours. See
