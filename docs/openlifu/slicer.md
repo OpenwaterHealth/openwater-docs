@@ -149,6 +149,10 @@ manually upload a photocollection or pre-reconstructed photogrammetry
 scan from local disk via the **Browse** button. Manually uploaded
 photogrammetry scans **must be in `.obj` format**.
 
+For capturing photocollections on the phone — capture technique, Online vs.
+Offline Mode, and transfer — see the
+[Photogrammetry App User Manual (LBL-00017)](photogrammetry-app.md).
+
 ### Continuing with a session
 
 <figure markdown="span">

@@ -212,7 +212,9 @@ Alongside the Open-LIFU PC application is a companion Android app used to
 capture photographs for photogrammetric reconstruction (the
 "Photocollections" used during transducer localization). See
 [Open-LIFU System → Android phone](system.md#android-phone) for supported
-device specifications.
+device specifications, and the
+[Photogrammetry App User Manual (LBL-00017)](photogrammetry-app.md) for the
+capture and reconstruction workflow.
 
 ## Tools used
 
