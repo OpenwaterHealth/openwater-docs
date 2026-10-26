@@ -88,6 +88,7 @@ pertaining to their particular use.
 |---|---|
 | Setting the device up for the first time | Quickstart Guide (LBL-00007 Rev 2) — *currently distributed in the onboarding packet; page pending* |
 | Full protocol parameter reference | [Creating & Editing Sonication Protocols (ER-00017)](sonication-protocols.md) |
+| Capturing photocollections with the Android app | [Photogrammetry App User Manual (LBL-00017)](photogrammetry-app.md) |
 | Hardware architecture and specifications | [The Open-LIFU System](system.md) |
 | Acoustic output verification | [Water Tank Testing (ER-00016)](water-tank-testing.md) |
 | Building on or extending the platform | [Software Development](software.md) |

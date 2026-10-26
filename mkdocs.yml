@@ -157,7 +157,7 @@ nav:
           # - Onboarding: openlifu/onboarding.md                  # AWAITING ECO — draft, Product Management
 
       - Photogrammetry:
-          # - Companion App: openlifu/photogrammetry-app.md       # AWAITING ECO — draft LBL-00017
+          - App User Manual: openlifu/photogrammetry-app.md       # LBL-00017 Rev A — released via ECO-000379 (2026-10-21)
           # - Localization Accuracy Study: openlifu/localization-accuracy.md   # AWAITING ECO — draft white paper
           - Android App on Google Play: https://play.google.com/store/apps/details?id=health.openwater.openlifu3dscanner
 

@@ -355,6 +355,9 @@ scoop install android-platform-tools
    `.apk`.
 3. Approve the install. Open the app and allow camera and storage permissions.
 
+For the full capture and reconstruction workflow, see the
+[Photogrammetry App User Manual (LBL-00017)](photogrammetry-app.md).
+
 ### Enable Developer Mode and USB debugging
 
 1. Settings → About Phone → tap **Build number** 7 times.
