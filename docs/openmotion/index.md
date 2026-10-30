@@ -115,6 +115,7 @@ Each section maps directly to the corresponding section of the PDF.
 | If you want to… | Go to |
 |---|---|
 | Get set up and run your first scan | [Quick Start Guide](developer-quickstart.md) |
+| Operate the device safely and run research scans | [User Manual](user-manual.md) |
 | Understand the system at a hardware level | [The Open-Motion System](system.md) |
 | Build, extend, or integrate with the SDK | [Software Development](software.md) |
 | Get hardware files for fabrication | [Hardware Development](hardware.md) |

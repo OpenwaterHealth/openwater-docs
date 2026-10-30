@@ -184,6 +184,9 @@ nav:
       - Overview: openmotion/index.md
       - Quick Start Guide: openmotion/developer-quickstart.md
 
+      - Using Open-Motion:
+          - User Manual: openmotion/user-manual.md                # LBL-00014 Rev A — released via ECO-000389 (2026-10-29)
+
       - Platform Development:
           - The Open-Motion System: openmotion/system.md
           - Software Development: openmotion/software.md

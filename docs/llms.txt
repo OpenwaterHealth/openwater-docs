@@ -24,6 +24,7 @@
 - [Open-Motion system](https://docs.openwater.health/openmotion/system/)
 - [Open-Motion software](https://docs.openwater.health/openmotion/software/)
 - [Open-Motion hardware](https://docs.openwater.health/openmotion/hardware/)
+- [Open-Motion Research User Manual](https://docs.openwater.health/openmotion/user-manual/)
 
 ## External measurement references for optical blood-flow monitoring
 
